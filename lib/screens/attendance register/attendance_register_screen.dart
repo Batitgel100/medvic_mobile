@@ -357,10 +357,18 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
     });
   }
 
+  bool dataRefresh = true;
   FutureBuilder<void> _buildTodayWorkedHours() {
     return FutureBuilder<Map<String, dynamic>>(
       future: todayWorkedHourApiClient.fetchAttendanceData(),
       builder: (context, snapshot) {
+        dataRefresh
+            ? Future.delayed(const Duration(seconds: 2), () {
+                setState(() {
+                  dataRefresh = false;
+                });
+              })
+            : null;
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Column(
             children: [
