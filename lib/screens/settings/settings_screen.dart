@@ -54,9 +54,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
             future: EmployeDataApiClient().getEmployeeData(),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(
-                    child:
-                        CircularProgressIndicator()); // Show a loading indicator while fetching data.
+                return Center(
+                    child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    SizedBox(
+                      height: 300,
+                    ),
+                    CircularProgressIndicator(),
+                  ],
+                )); // Show a loading indicator while fetching data.
               } else if (snapshot.hasError) {
                 return const Center(
                   child: Text(
