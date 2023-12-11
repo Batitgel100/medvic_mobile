@@ -1,0 +1,73 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+_CastError: Null check operator used on a null value
+
+```
+#0      HotRunner.evictDirtyAssets (package:flutter_tools/src/run_hot.dart:1047:24)
+#1      HotRunner._reloadSources (package:flutter_tools/src/run_hot.dart:942:11)
+<asynchronous suspension>
+#2      HotRunner._hotReloadHelper (package:flutter_tools/src/run_hot.dart:830:16)
+<asynchronous suspension>
+#3      HotRunner.restart (package:flutter_tools/src/run_hot.dart:725:36)
+<asynchronous suspension>
+#4      TerminalHandler._commonTerminalInputHandler (package:flutter_tools/src/resident_runner.dart:1707:40)
+<asynchronous suspension>
+#5      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1760:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.7.10, on macOS 13.0.1 22A400 darwin-arm64, locale en-MN)
+    [32m•[39m Flutter version 3.7.10 on channel stable at /Users/unurjargal/Downloads/flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 4b12645012 (7 months ago), 2023-04-03 17:46:48 -0700
+    [32m•[39m Engine revision ec975089ac
+    [32m•[39m Dart version 2.19.6
+    [32m•[39m DevTools version 2.20.1
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 32.0.0)
+    [32m•[39m Android SDK at /Users/unurjargal/Library/Android/sdk
+    [32m•[39m Platform android-33, build-tools 32.0.0
+    [32m•[39m Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-17.0.6b802.4-9586694)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Xcode - develop for iOS and macOS (Xcode 14.3.1)
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Build 14E300c
+    [32m•[39m CocoaPods version 1.11.3
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[32m[✓][39m Android Studio (version 2022.2)
+    [32m•[39m Android Studio at /Applications/Android Studio.app/Contents
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.6+0-17.0.6b802.4-9586694)
+
+[32m[✓][39m VS Code (version 1.70.2)
+    [32m•[39m VS Code at /Users/unurjargal/Downloads/Visual Studio Code-4.app/Contents
+    [32m•[39m Flutter extension version 3.60.0
+
+[32m[✓][39m Connected device (3 available)
+    [32m•[39m iPhone 14 Pro Max (mobile) • 89DA3DDB-10B3-4B97-B3EF-C2B6660654B9 • ios            • com.apple.CoreSimulator.SimRuntime.iOS-16-4 (simulator)
+    [32m•[39m macOS (desktop)            • macos                                • darwin-arm64   • macOS 13.0.1 22A400 darwin-arm64
+    [32m•[39m Chrome (web)               • chrome                               • web-javascript • Google Chrome 119.0.6045.105
+
+[32m[✓][39m HTTP Host Availability
+    [32m•[39m All required HTTP hosts are available
+
+[32m•[39m No issues found!
+```
