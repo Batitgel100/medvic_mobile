@@ -65,15 +65,19 @@ class _TestScreenState extends State<TestScreen> {
                       child: CircularProgressIndicator(),
                     ))
                   : ListView.builder(
-                      padding: const EdgeInsets.only(top: 20),
+                      padding: const EdgeInsets.only(top: 80),
                       itemCount: attendanceList.length,
                       itemBuilder: (BuildContext context, int index) {
                         final record = attendanceList[index];
                         return _buildCard(
-                          record.checkIn.toString(),
+                          record.checkIn == null
+                              ? ''
+                              : record.checkIn.toString(),
                           'Ирсэн -',
                           'Явсан -',
-                          record.checkOut.toString(),
+                          record.checkOut == null
+                              ? ''
+                              : record.checkOut.toString(),
                         );
                       },
                     ),
@@ -101,10 +105,10 @@ class _TestScreenState extends State<TestScreen> {
           const Duration(hours: 8),
         );
 
-        final formattedTime = DateFormat('HH:mm:ss').format(parsedDateTime);
+        final formattedTime = DateFormat('HH:mm').format(parsedDateTime);
         return formattedTime;
       } catch (e) {
-        return 'Invalid date format'; // Return an error message if parsing fails
+        return 'бүртгэгдээгүй'; // Return an error message if parsing fails
       }
     }
 
@@ -113,7 +117,7 @@ class _TestScreenState extends State<TestScreen> {
         const Duration(hours: 8),
       ),
     );
-    final formattedTime = DateFormat('HH:mm:ss').format(
+    final formattedTime = DateFormat('HH:mm').format(
       DateTime.parse(cameDay).add(
         const Duration(hours: 8),
       ),

@@ -8,9 +8,13 @@
 		<data>
 		85iaADE5tc/NukRC+KGdiZaZ0ZA=
 		</data>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<data>
+		gq7ssUMOHFlDGkYIlPN3+zQfNB4=
+		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		+NKu3UwG9EUNezIIAIyka5BE2h4=
+		2AfxvgE8s9EurIumbDqya8Ni6ao=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +22,11 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		hSRYBT1RQXBkOt20IOwc1BquCgw=
+		0o8yfqlLD/WSKET9ss0wTF4zzP0=
+		</data>
+		<key>flutter_assets/assets/512medvic.png</key>
+		<data>
+		O9VJoGQ9uGGwDQ6sZyAQO+7HO0A=
 		</data>
 		<key>flutter_assets/assets/medvic_logo.png</key>
 		<data>
@@ -30,11 +38,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		xbo3iIc8fTnuE5W4XE0VFw6QIBI=
+		8vpBrNk/5P/p/7un/AheNJ7WLIo=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		2tihl6Ni2vViRCRktWQSwFIYEk4=
+		xHlTdsn6dbWSDmG3jaRAL3kxohY=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -42,20 +50,27 @@
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
-		Z/DhfUUahgFGsthszkW1YubfdU8=
+		ZiX/DByz8A2xHGmziP9zxnaRW9M=
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		bjcE383nCc8U85vWBdZ80X32NVA=
+		cW0Pqsk2814YYWUEON+YgI6+YD0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>flutter_assets/AssetManifest.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0XKFrlj+ezofHMvw+go1FmaNstAHfAQrJ08YWUDANaY=
+			</data>
+		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OwJR2CIY49m1hoYpNIBF4syYQ0GYBeUqwli0UYLwn5M=
+			Bck0N+ts/DSmJ+WhAI0VUGhaXl7PCanoBNWFKC4hBc8=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -69,7 +84,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1QRuGbcVZtd8GCzVeKjOUCB5Dv//EiuaECou+j3EIw=
+			R239QhP8QUWjZqinS5oAlxc9UgNetoZIaScFE3CULcw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/512medvic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EU7Zvvs1jlYAWIXG+YwplI2USLXPH3dZWHUHRLzYZuM=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/medvic_logo.png</key>
@@ -90,14 +112,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			76aJUrz/yLBliHLDcOlVu+tPuICHsFWS91Ovpysst2I=
+			yuohnKVCTa8HGCvX0NZT5Bz0DfMH4eRHwl4vRVKRiVo=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8eIPTO7HwkiOL9ELRkafsfC06AaHBwCXnco3TdKLwA=
+			ccMG3Lk1j8WQqy8DlLG3g5A4SysfKNG1gx8MKUhZcHg=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -111,14 +133,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgGex10sKxTSC95tzLdljzYd3qnntuSb96YXXaU9Nlc=
+			49CVVGC0BQtpsarzJBllXjeVYst0OhUVq6Izlb7jGMQ=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L69dzlyAJyxdLVGPUFBuUaiyjDwAOUWCUp3TXXm9RjY=
+			sev5a27JT/ZUSpHrGmWBmxjqtUgq1PyqOI5pHwvTLwg=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,126 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tengerSoft.medvic"
+4    android:versionCode="3"
+5    android:versionName="1.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.tengerSoft.medvic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.tengerSoft.medvic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+18        android:name="android.app.Application"
+18-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:5:9-42
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] /Users/unurjargal/.gradle/caches/transforms-3/5f80b20db3afa86c72a9766b008d752d/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+20        android:icon="@mipmap/medvic_logo"
+20-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:6:9-43
+21        android:label="Medvic" >
+21-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:4:9-31
+22        <activity
+22-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:7:9-27:20
+23            android:name="com.tengerSoft.medvic.MainActivity"
+23-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:8:13-41
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+24-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:12:13-163
+25            android:exported="true"
+25-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:9:13-36
+26            android:hardwareAccelerated="true"
+26-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:13:13-47
+27            android:launchMode="singleTop"
+27-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:10:13-43
+28            android:theme="@style/LaunchTheme"
+28-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:11:13-47
+29            android:windowSoftInputMode="adjustResize" >
+29-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:14:13-55
+30
+31            <!--
+32                 Specifies an Android theme to apply to this Activity as soon as
+33                 the Android process has started. This theme is visible to the user
+34                 while the Flutter UI initializes. After that, this theme continues
+35                 to determine the Window background behind the Flutter UI.
+36            -->
+37            <meta-data
+37-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:19:13-22:17
+38                android:name="io.flutter.embedding.android.NormalTheme"
+38-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:20:15-70
+39                android:resource="@style/NormalTheme" />
+39-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:21:15-52
+40
+41            <intent-filter>
+41-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:23:13-26:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:24:17-68
+42-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:24:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:25:17-76
+44-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:25:27-74
+45            </intent-filter>
+46        </activity>
+47        <!--
+48             Don't delete the meta-data below.
+49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+50        -->
+51        <meta-data
+51-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:30:9-32:33
+52            android:name="flutterEmbedding"
+52-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:31:13-44
+53            android:value="2" />
+53-->/Users/unurjargal/Documents/GitHub/medvic_mobile/android/app/src/main/AndroidManifest.xml:32:13-30
+54
+55        <service
+55-->[:geolocator_android] /Users/unurjargal/Documents/GitHub/medvic_mobile/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:56
+56            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+56-->[:geolocator_android] /Users/unurjargal/Documents/GitHub/medvic_mobile/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-77
+57            android:enabled="true"
+57-->[:geolocator_android] /Users/unurjargal/Documents/GitHub/medvic_mobile/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-35
+58            android:exported="false"
+58-->[:geolocator_android] /Users/unurjargal/Documents/GitHub/medvic_mobile/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+59            android:foregroundServiceType="location" />
+59-->[:geolocator_android] /Users/unurjargal/Documents/GitHub/medvic_mobile/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-53
+60
+61        <uses-library
+61-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+62            android:name="androidx.window.extensions"
+62-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+63            android:required="false" />
+63-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+64        <uses-library
+64-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+65            android:name="androidx.window.sidecar"
+65-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+66            android:required="false" />
+66-->[androidx.window:window:1.0.0-beta04] /Users/unurjargal/.gradle/caches/transforms-3/dee59bb480020f42d53c2ea15e4501f7/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+67
+68        <activity
+68-->[com.google.android.gms:play-services-base:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/24bd5ae211488322aa8c48f41a7bee4d/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+69-->[com.google.android.gms:play-services-base:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/24bd5ae211488322aa8c48f41a7bee4d/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-base:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/24bd5ae211488322aa8c48f41a7bee4d/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-base:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/24bd5ae211488322aa8c48f41a7bee4d/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/f46b9773282b7a3d38863a46e0e0b5d1/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/f46b9773282b7a3d38863a46e0e0b5d1/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->[com.google.android.gms:play-services-basement:18.1.0] /Users/unurjargal/.gradle/caches/transforms-3/f46b9773282b7a3d38863a46e0e0b5d1/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+76    </application>
+77
+78</manifest>

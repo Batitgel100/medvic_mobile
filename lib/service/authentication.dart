@@ -1,5 +1,8 @@
+// ignore_for_file: avoid_print
+
 import 'dart:convert';
 import 'package:erp_medvic_mobile/globals.dart';
+import 'package:erp_medvic_mobile/models/employe_data_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -9,11 +12,7 @@ class AuthService {
     try {
       final response = await http.post(
         Uri.parse(
-            'http://medvic.mn/api/auth/get_tokens?username=Baljinnyam&password=123456'),
-        body: {
-          'username': username,
-          'password': password,
-        },
+            'http://medvic.mn/api/auth/get_tokens?username=$username&password=$password'),
       );
 
       if (response.statusCode == 200) {
@@ -32,7 +31,7 @@ class AuthService {
         Globals.changelat(longitude);
         Globals.changelong(latitude);
         Globals.changeTimer(timer);
-
+        await getEmployeeData();
         // print('${Globals.getlat()},${Globals.getlong()}');
 
         return true;
@@ -43,5 +42,23 @@ class AuthService {
       print(e);
       return false;
     }
+  }
+
+  Future<EmployeeDataEntity?> getEmployeeData() async {
+    var headers = {'Access-token': Globals.getRegister().toString()};
+    var response = await http.get(
+      Uri.parse(
+          'http://medvic.mn/api/hr.employee.public?filters=[["user_id", "=", ${Globals.getUserId()}]]'),
+      headers: headers,
+    );
+
+    if (response.statusCode == 200) {
+      final Map<String, dynamic> data = json.decode(response.body);
+      final List<dynamic> results = data['results'];
+      final String username = results[0]['name'];
+      Globals.changeUserName(username);
+      print('tiiinmeeee');
+    }
+    return null;
   }
 }

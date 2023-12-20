@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:erp_medvic_mobile/globals.dart';
 import 'package:erp_medvic_mobile/models/employe_data_entity.dart';
@@ -19,6 +18,8 @@ class EmployeDataApiClient {
       final List<dynamic> results = data['results'];
       final int id = results[0]['id'];
       final int companyId = results[0]['company_id'];
+      final String username = results[0]['name'];
+      Globals.changeUserName(username);
       Globals.changeEmployeeId(id);
       Globals.changeCompanyId(companyId);
 

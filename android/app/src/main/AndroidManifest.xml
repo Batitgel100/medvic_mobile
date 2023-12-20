@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tengerSoft.medvic">
    <application
-        android:label="erp_medvic_mobile"
+        android:label="Medvic"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/medvic_logo">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -15,13 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>erp_medvic_mobile</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>App needs access to location when in the background.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>App needs access to location when in the background.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App requires access to location when open.</string>
+	<string>Medvic</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -32,6 +26,12 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App needs your location for registering attendance to work.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App needs your location for registering attendance to work.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App needs your location for registering attendance to work.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

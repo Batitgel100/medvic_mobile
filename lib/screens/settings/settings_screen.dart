@@ -79,35 +79,46 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.22,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          Expanded(
-                            flex: 3,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Text(
-                                  employee.name.toString(),
-                                  style: const TextStyle(
-                                      fontSize: 28,
-                                      fontWeight: FontWeight.w500),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              SizedBox(
+                                height: 60,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(20.0),
+                                child: CircleAvatar(
+                                  radius: 40.0,
+                                  backgroundColor: Colors.blue,
+                                  // backgroundImage:
+                                  //     AssetImage(employee.image1920.toString()),
                                 ),
-                                Text(
-                                  employee.jobTitle.toString(),
-                                  style: TextStyles.black17semibold,
-                                ),
-                                SizedBox(
-                                  height: MediaQuery.of(context).size.height *
-                                      0.065,
-                                )
-                              ],
-                            ),
+                              ),
+                            ],
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text(
+                                employee.name.toString(),
+                                style: const TextStyle(
+                                    fontSize: 28, fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                employee.jobTitle.toString(),
+                                style: TextStyles.black17semibold,
+                              ),
+                              SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.055,
+                              )
+                            ],
                           )
                         ],
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.38,

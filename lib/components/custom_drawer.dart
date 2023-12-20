@@ -10,13 +10,14 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: AppColors.secondBlack,
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
             curve: Curves.easeIn,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: AppColors.secondBlack,
             ),
             child: Text(
               'Цэс',
@@ -25,11 +26,12 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(
-              Icons.train,
+              Icons.note,
+              color: Colors.white,
             ),
             title: const Text(
               'Ирц харах',
-              style: TextStyles.black19,
+              style: TextStyles.white22,
             ),
             onTap: () {
               Navigator.pushNamed(context, RoutesName.attendanceScreen);
@@ -38,6 +40,7 @@ class CustomDrawer extends StatelessWidget {
           // ListTile(
           //   leading: const Icon(
           //     Icons.train,
+          // color: Colors.white,
           //   ),
           //   title: const Text(
           //     'Тооллого',

@@ -32,7 +32,7 @@ class ApiProvider {
 class Attendance {
   final int id;
   final DateTime? checkIn;
-  final DateTime? checkOut;
+  final DateTime? checkOut; // Make this property nullable
   final int? employeeId;
   final double? workedHours;
 
@@ -48,7 +48,9 @@ class Attendance {
     return Attendance(
       id: json['id'],
       checkIn: DateTime.parse(json['check_in']),
-      checkOut: DateTime.parse(json['check_out']),
+      checkOut: json['check_out'] != null
+          ? DateTime.parse(json['check_out'])
+          : null, // Handle null check
       employeeId: json['employee_id'],
       workedHours: json['worked_hours'],
     );

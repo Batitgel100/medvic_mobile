@@ -144,7 +144,7 @@ class TextStyles {
   static const TextStyle white22semibold = TextStyle(
     color: Colors.white,
     fontSize: 22,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
   static const TextStyle black22semibold = TextStyle(
     color: Colors.black,

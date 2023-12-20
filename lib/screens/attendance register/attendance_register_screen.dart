@@ -4,7 +4,6 @@ import 'package:erp_medvic_mobile/app_types.dart';
 import 'package:erp_medvic_mobile/components/custom_drawer.dart';
 import 'package:erp_medvic_mobile/constant/constant.dart';
 import 'package:erp_medvic_mobile/globals.dart';
-import 'package:erp_medvic_mobile/models/employe_data_entity.dart';
 import 'package:erp_medvic_mobile/service/attendance_list_repo.dart';
 import 'package:erp_medvic_mobile/service/company_name_repo.dart';
 import 'package:erp_medvic_mobile/service/register_attendance.dart';
@@ -39,7 +38,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   late Timer inactivityTimer;
   int storedId = 0;
   CompanyNameRepository getcompany = CompanyNameRepository();
-
+  final GlobalKey<ScaffoldState> _key = GlobalKey();
   @override
   void initState() {
     super.initState();
@@ -208,7 +207,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   }
 
   void registerCame() {
-    if (isInLocation == false) {
+    if (isInLocation == true) {
       registerAttendance.register(context);
       //   // Utils.flushBarSuccessMessage('Амжилттай бүртгэгдлээ.', context);
     } else {
@@ -291,51 +290,133 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // behavior: HitTestBehavior.translucent,
-      // onTap: () {
-      //   resetInactivityTimer();
-      // },
-      // onPanUpdate: (details) {
-      //   resetInactivityTimer();
-      // },
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: AppColors.mainColor,
-        ),
-        drawer: const CustomDrawer(),
+        key: _key,
+        appBar: _appbar(),
+        endDrawer: const CustomDrawer(),
         body: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(0.0),
           child: Center(
             child: RefreshIndicator(
               onRefresh: _onRefresh,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _buildName(),
-                  _buildThirtyDay(),
+                  // _buildName(),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(left: 10.0, bottom: 10, top: 5),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
-                        Text(
-                          'ӨНӨӨДРИЙН ИРЦ',
-                          style: TextStyles.black19,
-                        ),
-                      ],
+                    padding: const EdgeInsets.only(
+                      // right: 20.0,
+                      top: 30,
+                    ),
+                    child: Container(
+                      height: 80,
+                      width: MediaQuery.of(context).size.width * 0.95,
+                      decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(12),
+                            bottomRight: Radius.circular(12),
+                          ),
+                          boxShadow: [BoxShadows.shadow3]),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                const Icon(
+                                  Icons.calendar_month,
+                                  size: 30,
+                                  color: AppColors.mainColor,
+                                ),
+                                // const SizedBox(
+                                //   width: 5,
+                                // ),
+                                _buildThirtyDay(),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  _buildTodayWorkedHours(),
-                  const SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      _buildSmallButton(
-                          0.06, 0.37, onCame, AppColors.white, 'Ирсэн'),
-                      _buildSmallButton(
-                          0.06, 0.37, onLeft, AppColors.white, 'Явсан'),
-                    ],
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  _title(),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 20,
+                    ),
+                    child: Container(
+                      height: cameRegistered ? 150 : 80,
+                      width: MediaQuery.of(context).size.width * 0.95,
+                      decoration: const BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(12),
+                            bottomRight: Radius.circular(12),
+                          ),
+                          boxShadow: [BoxShadows.shadow3]),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              SizedBox(
+                                width: 20,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.07,
+                                      child: const Icon(
+                                        Icons.schedule,
+                                        size: 30,
+                                        color: AppColors.mainColor,
+                                      ),
+                                    ),
+                                    cameRegistered
+                                        ? SizedBox(
+                                            height: MediaQuery.of(context)
+                                                    .size
+                                                    .height *
+                                                0.07,
+                                            child: const Icon(
+                                              Icons.schedule,
+                                              size: 30,
+                                              color: AppColors.mainColor,
+                                            ),
+                                          )
+                                        : const SizedBox(),
+                                  ],
+                                ),
+                              ),
+                              _buildTodayWorkedHours(),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 30),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        _buildSmallButton(
+                            0.075, 0.45, onCame, AppColors.mainColor, 'Ирсэн'),
+                        _buildSmallButton(
+                            0.075, 0.45, onLeft, AppColors.mainColor, 'Явсан'),
+                      ],
+                    ),
                   ),
                   const Spacer(),
                 ],
@@ -343,6 +424,114 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  PreferredSize _appbar() {
+    return PreferredSize(
+        preferredSize: const Size.fromHeight(100),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 0.0, top: 0),
+                  child: Container(
+                    height: 80,
+                    width: 300,
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(12),
+                          bottomRight: Radius.circular(12),
+                        ),
+                        boxShadow: [BoxShadows.shadow3]),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 00.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          const Expanded(
+                            flex: 2,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  radius: 30,
+                                  backgroundColor: AppColors.secondBlack,
+                                  child: Icon(
+                                    Icons.person,
+                                    size: 30,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 4,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'Сайн байна уу?',
+                                  style: TextStyle(
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w400,
+                                      color: AppColors.secondBlack),
+                                ),
+                                Text(
+                                  Globals.getUserName(),
+                                  style: const TextStyle(
+                                      color: AppColors.mainColor, fontSize: 25),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () => _key.currentState!.openEndDrawer(),
+                  child: Container(
+                    height: 80,
+                    width: 100,
+                    decoration: const BoxDecoration(
+                        color: AppColors.mainColor,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(12),
+                          bottomLeft: Radius.circular(12),
+                        ),
+                        boxShadow: [BoxShadows.shadow3]),
+                    child: const Icon(
+                      Icons.menu,
+                      size: 30,
+                      color: Colors.white,
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ));
+  }
+
+  Padding _title() {
+    return const Padding(
+      padding: EdgeInsets.only(left: 10.0, bottom: 0, top: 15),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text(
+            'ӨНӨӨДРИЙН ИРЦ',
+            style: TextStyles.black17semibold,
+          ),
+        ],
       ),
     );
   }
@@ -363,21 +552,16 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
       future: todayWorkedHourApiClient.fetchAttendanceData(),
       builder: (context, snapshot) {
         dataRefresh
-            ? Future.delayed(const Duration(seconds: 1), () {
+            ? Future.delayed(const Duration(seconds: 2), () {
                 setState(() {
                   dataRefresh = false;
                 });
               })
             : null;
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Column(
-            children: [
-              _buildLoadingIndicator(context),
-              _buildLoadingIndicator(context),
-            ],
-          );
-        } else if (snapshot.hasError) {
           return _buildLoadingIndicator(context);
+        } else if (snapshot.hasError) {
+          return const Text('Алдаа заалаа');
         } else if (!snapshot.hasData) {
           return const Center(child: Text('Мэдээлэл байхгүй'));
         } else {
@@ -407,66 +591,56 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
           }
 
           return cameRegistered
-              ? Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height * 0.075,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: AppColors.mainColor,
+              ? SizedBox(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 0.0),
+                        child: SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.065,
+                          child: Center(
+                              child: _refreshData
+                                  ? const CircularProgressIndicator(
+                                      color: AppColors.secondBlack,
+                                    )
+                                  : Text(
+                                      'Ирсэн цаг:   $formattedCheckIn',
+                                      style: TextStyles.black20,
+                                    )),
                         ),
-                        child: Center(
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 0.0),
+                        child: SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.065,
+                          child: Center(
                             child: _refreshData
                                 ? const CircularProgressIndicator(
-                                    color: AppColors.white,
+                                    color: AppColors.secondBlack,
                                   )
                                 : Text(
-                                    'Ирсэн цаг: $formattedCheckIn',
-                                    style: TextStyles.white22,
-                                  )),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 10.0),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height * 0.075,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: AppColors.mainColor,
-                        ),
-                        child: Center(
-                          child: _refreshData
-                              ? const CircularProgressIndicator(
-                                  color: AppColors.white,
-                                )
-                              : Text(
-                                  'Явсан цаг: ${formattedCheckOut == '08:00' ? "бүртгэл хийгдээгүй" : formattedCheckOut}',
-                                  style: TextStyles.white22,
-                                ),
+                                    'Явсан цаг:   ${formattedCheckOut == '08:00' ? "бүртгээгүй" : formattedCheckOut}',
+                                    style: TextStyles.black20,
+                                  ),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 )
               : Padding(
                   padding: const EdgeInsets.only(bottom: 10.0),
-                  child: Container(
+                  child: SizedBox(
                     height: MediaQuery.of(context).size.height * 0.075,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      color: AppColors.mainColor,
-                    ),
                     child: Center(
                       child: _refreshData
                           ? const CircularProgressIndicator(
-                              color: AppColors.white,
+                              color: AppColors.secondBlack,
                             )
                           : const Text(
                               'бүртгэл хийгдээгүй',
-                              style: TextStyles.white22,
+                              style: TextStyles.black20,
                             ),
                     ),
                   ),
@@ -476,20 +650,10 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
     );
   }
 
-  Padding _buildLoadingIndicator(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10.0),
-      child: Container(
-        height: MediaQuery.of(context).size.height * 0.075,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          color: AppColors.mainColor,
-        ),
-        child: const Center(
-          child: CircularProgressIndicator(
-            color: AppColors.white,
-          ),
-        ),
+  Center _buildLoadingIndicator(BuildContext context) {
+    return const Center(
+      child: CircularProgressIndicator(
+        color: AppColors.secondBlack,
       ),
     );
   }
@@ -501,88 +665,24 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return _buildLoadingIndicator(context);
         } else if (snapshot.hasError) {
-          print(snapshot.error);
-          return _buildLoadingIndicator(context);
+          return const Text('Алдаа заалаа');
         } else if (!snapshot.hasData) {
-          return const Text('No data available');
+          return const Text('Алдаа заалаа');
         } else {
           double totalWorkedHours = snapshot.data!;
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 10.0),
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.075,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: AppColors.mainColor,
-              ),
-              child: Center(
-                child: _refreshData
-                    ? const CircularProgressIndicator(
-                        color: AppColors.white,
-                      )
-                    : Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                        child: Text(
-                          '30 Хоногийн ирц: ${totalWorkedHours.toStringAsFixed(2)} цаг',
-                          style: TextStyles.white22,
-                        ),
-                      ),
-              ),
-            ),
-          );
+          return _refreshData
+              ? const CircularProgressIndicator(
+                  color: AppColors.mainColor,
+                )
+              : Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: .0),
+                  child: Text(
+                    '30 Хоногийн ирц: ${totalWorkedHours.toStringAsFixed(2)} цаг',
+                    style: TextStyles.black20,
+                  ),
+                );
         }
       },
-    );
-  }
-
-  Padding _buildDate(BuildContext context, String formattedDate) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 25.0),
-      child: Container(
-        height: MediaQuery.of(context).size.height * 0.075,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            color: AppColors.mainColor),
-        child: Center(
-          child: Text(formattedDate, style: TextStyles.white22),
-        ),
-      ),
-    );
-  }
-
-  Padding _buildName() {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10.0),
-      child: FutureBuilder<EmployeeDataEntity?>(
-        future: EmployeDataApiClient().getEmployeeData(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return _buildLoadingIndicator(context);
-          } else if (snapshot.hasError) {
-            return const Text(
-              'Интернэт холболтоо шалгана уу!',
-              style: TextStyles.black17,
-            );
-          } else if (snapshot.hasData) {
-            final employee = snapshot.data!;
-
-            return Container(
-              height: MediaQuery.of(context).size.height * 0.08,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: AppColors.mainColor),
-              child: Center(
-                child: Text(
-                  employee.name.toString(),
-                  style: TextStyles.white22,
-                ),
-              ),
-            );
-          } else {
-            return const Text('No employee data available');
-          }
-        },
-      ),
     );
   }
 
@@ -596,13 +696,13 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
           height: MediaQuery.of(context).size.height * height,
           width: MediaQuery.of(context).size.width * width * 0.95,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(30),
               color: color,
               boxShadow: const [BoxShadows.shadow3]),
           child: Center(
             child: Text(
               text,
-              style: TextStyles.main17semibold,
+              style: TextStyles.white22semibold,
             ),
           ),
         ),

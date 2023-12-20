@@ -1,0 +1,2130 @@
+android.content.res.Resources#getIdentifier present: true
+Web content present: false
+Referenced Strings:
+android.settings.MANAGE_APP_ALL_FILES...
+exception
+cancel
+THROTTLE_NEVER
+DISMISS
+TextInput.requestAutofill
+accuracy
+app_flutter
+GeolocatorLocationService:WifiLock
+kRepeat
+java.lang.Integer
+resolution
+deviceId
+actionIntent
+enableWifiLock
+com.google.app.id
+verticalText
+android.util.LongArray
+FlutterSharedPreferences
+permissionRequestInProgress
+getUncaughtExceptionPreHandler
+SERVICE_DISABLED
+onBackPressed
+googleSignInAccount
+adapter
+GeneratedPluginsRegister
+LEFT
+java.lang.CharSequence
+LANDSCAPE_RIGHT
+_handled
+givenName
+PermissionHandler.AppSettingsManager
+androidx.window.layout.WindowInfoTrac...
+CONNECTION_SUSPENDED_DURING_CALL
+ActivityRule
+version
+click
+0
+size
+kotlinx.coroutines.DefaultExecutor
+WindowInfoTrackerImpl.kt
+left
+kotlin.jvm.functions.
+onMenuKeyEvent
+android.support.useSideChannel
+TextInputClient.updateEditingStateWit...
+registerWith
+android.support.dataRemoteInputs
+SystemSoundType.alert
+android.permission.READ_CONTACTS
+activityMissing
+REDUCE_MOTION
+kotlin.internal.JRE7PlatformImplement...
+displayName
+DECREASE
+android.settings.action.MANAGE_OVERLA...
+$splitPairFilters
+PORTRAIT_DOWN
+LifecycleFragmentImpl
+sidecarAdapter
+libapp.so
+SignInClientImpl
+com.google.common.base.Strings
+RestorationChannel
+middleInitial
+SystemUiMode.immersiveSticky
+flutter/platform_views
+PHYSICAL_DISPLAY_PLATFORM_VIEW
+AccountAccessor
+TextCapitalization.words
+updateViewLayout
+android.people
+codePoint
+_
+SUCCESS
+SystemUiOverlay.top
+d
+destroy_engine_with_activity
+h
+truncated
+kotlin.String
+m
+IS_CHECK_STATE_MIXED
+ACTIVITY_MISSING
+sidecarDeviceState
+n
+displayFeatures
+SwitchIntDef
+component
+DRIVE_EXTERNAL_STORAGE_REQUIRED
+s
+androidx.lifecycle.BundlableSavedStat...
+java.lang.Module
+SUSPEND
+package:
+DEVELOPER_ERROR
+this$0
+splitPairFilters
+x
+Loaders:
+android:theme
+onNewIntent
+SystemUiMode.edgeToEdge
+acc
+flutter_assets
+getName
+TextInputClient.performPrivateCommand
+displayFeature.rect
+altitude_accuracy
+mimeType
+emailAddress
+startIndex
+PASSIVE
+addSuppressed
+android:style
+componentName
+SIGN_IN_REQUIRED
+activityComponent.className
+addressCountry
+add
+get_last_location_with_request
+LIGHT
+SIGN_IN_FAILED
+kotlinx.coroutines.default.parallelism
+extensionCallback
+com.google.android.gms.signin.interna...
+gps
+LONG_PRESS
+AnnotateVersionCheck
+DID_LOSE_ACCESSIBILITY_FOCUS
+HAS_CHECKED_STATE
+UNSET_PRIMARY_NAV
+FlutterEngine
+GoogleApiActivity
+flutter/keyevent
+phoneCountryCode
+RECONNECTION_TIMED_OUT_DURING_UPDATE
+failed_status
+telephoneNumberCountryCode
+com.google.android.location.internal....
+error_code
+deviceState
+pendingIntent
+decimal
+AppLifecycleState.
+com.google.android.gms.dynamic.IObjec...
+SystemChrome.setSystemUIOverlayStyle
+TextInput.setEditableSizeAndTransform
+HandlerLeak
+enable_state_restoration
+COMPLETING_WAITING_CHILDREN
+THROTTLE_ALWAYS
+ClassVerificationFailure
+_invoked
+medium
+locale
+PERMISSION_REQUEST_IN_PROGRESS
+android.permission.WRITE_EXTERNAL_STO...
+SDK_INT
+defType
+com.google.android.gms.common.interna...
+SET_SELECTION
+timeInterval
+android.permission.WRITE_CONTACTS
+_delayed
+android.os.Build
+android.support.localOnly
+io.flutter.embedding.android.OldGenHe...
+android.permission.RECEIVE_SMS
+BITMAP_MASKABLE
+MOVE_CURSOR_BACKWARD_BY_CHARACTER
+kotlin.collections.List
+isEmpty
+IS_OBSCURED
+label
+MOVE_CURSOR_FORWARD_BY_CHARACTER
+EmbeddingBackend
+message
+scanCode
+FlutterJNI
+android:support:fragments
+args
+resizeUpLeft
+SignIn.API
+setDisplayFeatures
+HapticFeedbackType.lightImpact
+TextInputType.emailAddress
+creditCardExpirationDay
+ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
+android.view.View$AttachInfo
+username
+FlutterActivity
+java.lang.Float
+decorate
+Dispatchers.IO
+RESTRICTED_PROFILE
+UNDEFINED
+requestPermissions
+focus
+android.settings.REQUEST_SCHEDULE_EXA...
+EmptyQueue
+embeddingExtension
+PAUSED
+SCOPES_ROUTE
+android.os.Build$VERSION
+SplitPairRule
+executor
+android:cancelable
+IS_TEXT_FIELD
+SERVICE_MISSING
+android.settings.NOTIFICATION_POLICY_...
+kotlinx.coroutines.internal.StackTrac...
+dev.flutter.pigeon.SharedPreferencesA...
+write
+TextInputType.none
+onStop
+kotlin.coroutines.jvm.internal.a
+geolocator_channel_01
+grantedScopes
+TextInputAction.none
+secondaryActivityName.className
+GoogleSignatureVerifier
+byte
+getNextMatch
+getDeferredComponentInstallState
+splitRule
+defaultGoogleSignInAccount
+name:
+creditCardNumber
+resizeUp
+DiscouragedApi
+GooglePlayServicesUpdatingDialog
+onPostResume
+CLIP_RECT
+io.flutter.Entrypoint
+other
+wait
+FlutterActivityAndFragmentDelegate
+birthDateYear
+UnspecifiedImmutableFlag
+IS_LINK
+GoogleApiAvailability
+GRANULARITY_FINE
+cell
+%s.%sParcelizer
+URI
+safeCast
+URL
+packageName:
+FlutterTextureView
+CHARACTERS
+sLk
+io.flutter.embedding.android.EnableVu...
+top
+it.parameterTypes
+mNextServedView
+kotlin.Long
+com.google.android.gms.common.api.int...
+POLL_FAILED
+Completing
+java.lang.String
+addressRegion
+TextInput.setClient
+resizeDown
+android.settings.APPLICATION_DETAILS_...
+_resumed
+BasePendingResult
+heading
+HIGH_ACCURACY
+TextInputType.multiline
+DynamiteLoaderClassLoader.class
+getChildId
+android.permission.RECEIVE_MMS
+PRIVATE
+invisible_actions
+LoaderManager
+GRANULARITY_COARSE
+framework
+mipmap
+java.util.concurrent.ForkJoinPool
+ConnectionlessLifecycleHelper
+LIGHT_IMPACT
+DESTROYED
+service_googleme
+androidx.core.app.extra.COMPAT_TEMPLATE
+intervalMillis
+New
+selectionExtent
+SystemChrome.setEnabledSystemUIOverlays
+MouseCursorChannel
+ATOMIC
+kotlin.collections.Collection
+sInstance
+com.google.android.gms.location.inter...
+TextInputAction.send
+onStart
+android.widget.CheckBox
+com.google.android.gms.signin.interna...
+locationServicesDisabled
+buffer
+foregroundNotificationConfig
+API_DISABLED_FOR_CONNECTION
+HapticFeedback.vibrate
+longitude
+repeatCount
+always
+noDrop
+$activityFilters
+void
+flutter/keydata
+read
+memoryPressure
+flutter/restoration
+SurfaceTexturePlatformViewRenderTarget
+touch
+onUserLeaveHint
+_cur
+mStableInsets
+MetadataValueReader
+CommonPool
+onResume
+android.permission.MANAGE_EXTERNAL_ST...
+com.google.android.gms.chimera
+OFFER_SUCCESS
+java.util.List
+android.car.EXTENSIONS
+hybrid
+cn.google
+flutter.baseflow.com/geolocator_android
+UNEXPECTED:
+android.support.sortKey
+kotlin.Int
+basic
+collect
+kotlin.Throwable
+sidecarDisplayFeatures
+parkedWorkersStack
+requestPermission
+OP_POST_NOTIFICATION
+android.permission.CALL_PHONE
+android.permission.GET_ACCOUNTS
+handleLifecycleEvent
+addNode
+IS_IMAGE
+PHONE
+COMPLETING_ALREADY
+systemNavigationBarColor
+cause
+PlatformPlugin
+displayCutout
+java.lang.Iterable
+LocationResult
+rect
+kotlinx.coroutines.DefaultExecutor.ke...
+kotlin.Annotation
+com.google.android.gms.signin.interna...
+INVERT_COLORS
+GRANULARITY_PERMISSION_LEVEL
+DEAD_CLIENT
+android.permission.NEARBY_WIFI_DEVICES
+packageName
+synchronizeToNativeViewHierarchy
+LANDSCAPE_LEFT
+info.displayFeatures
+android.location.PROVIDERS_CHANGED
+direction
+android.permission.RECEIVE_WAP_PUSH
+BITMAP
+android.permission.WRITE_CALL_LOG
+API_NOT_CONNECTED
+windowConfiguration
+newConfig
+resizeUpRight
+RECONNECTION_TIMED_OUT
+Array
+gcore_
+android:user_visible_hint
+ATTACH
+flutter/lifecycle
+TextInputType.number
+activities
+WindowServer
+setValue
+layout_inflater
+UNKNOWN
+android.permission.CAMERA
+ActivityFilter
+getParentNodeId
+RestrictedApi
+common_google_play_services_sign_in_f...
+accessibility
+android.permission.READ_PHONE_NUMBERS
+getPoolSize
+com.google.android.gms.common.interna...
+PermissionHandler.PermissionManager
+SystemChrome.setEnabledSystemUIMode
+getAppBounds
+permissions_handler
+android.widget.HorizontalScrollView
+password
+GoogleApiHandler
+kotlinx.coroutines.scheduler.keep.ali...
+INCREASE
+NO_TARGET
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBEb3VibGUu
+ERROR
+jar
+state
+api
+SERVICE_UPDATING
+android.intent.action.PROVIDER_CHANGED
+CompanionObject
+secondaryActivityStack.activities
+element
+setOngoing
+pending_intent
+creditCardExpirationMonth
+cache
+android.permission.BLUETOOTH_SCAN
+enableWakeLock
+deltaText
+zoomIn
+android.view.ViewRootImpl
+Destroying.
+android.support.isGroupSummary
+input
+setQuality
+WakelockTimeout
+useMSLAltitude
+expirationTime
+remoteInputs
+sAllClients
+REMOVE_FROZEN
+anim
+POSTURE_FLAT
+androidx.savedstate.Restarter
+android.hardware.type.automotive
+kotlin.collections.ListIterator
+oemFeature.bounds
+restricted_profile
+dev.flutter.pigeon.SharedPreferencesA...
+CUSTOM_ACTION
+getKeyboardState
+setExpireIn
+TextInputClient.updateEditingStateWit...
+delimiters
+disabled
+ClientTelemetry.API
+PROTECTED
+STANDARD
+cached_engine_id
+timestamp
+android.permission.BODY_SENSORS_BACKG...
+setRemoveOnCancelPolicy
+https://plus.google.com/
+cancelGetCurrentPosition
+newLayoutInfo
+android.permission.READ_MEDIA_IMAGES
+IS_LIVE_REGION
+forbidden
+checkOpNoThrow
+Geolocator
+windowToken
+blockingTasksInBuffer
+onTrimMemory
+getSourceNodeId
+androidx.lifecycle.ViewModelProvider....
+streetAddress
+android.permission.READ_CALL_LOG
+kotlin.Char
+android:backStackId
+flutter/isolate
+ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
+grab
+chars
+dimen
+java.util.ListIterator
+kotlinx.coroutines.android.AndroidDis...
+SUCCESS_CACHE
+DefaultDispatcher
+SplitPlaceholderRule
+ALERT
+kotlin.Double
+source
+onActivityResult
+LocalizationChannel
+com.google.android.gms.location.ILoca...
+GoogleCertificates
+view
+isLocationServiceEnabled
+java.lang.Short
+allScroll
+SystemChrome.systemUIChange
+android.widget.Button
+NewApi
+ViewCompat
+com.google.android.gms.version
+REPLACE
+markState
+addressCity
+primaryActivityName
+includeSubdomains
+LocationServices.API
+overlay
+LOCATION_SERVICES_DISABLED
+android.intent.action.CALL
+creditCardSecurityCode
+flutter.baseflow.com/geolocator_updat...
+parentMetrics
+FULL
+NAME
+FragmentManager
+flutter
+phoneNumber
+composingBase
+name
+Class
+fields
+DartExecutor
+SERVICE_VERSION_UPDATE_REQUIRED
+SupportLifecycleFragmentImpl
+permissionDenied
+getDescriptor
+CLIENT_TELEMETRY
+keymap
+string
+FlutterLoader
+color
+deltaStart
+onRequestPermissionsResult
+kotlin.coroutines.jvm.internal.BaseCo...
+android
+platformViewId
+common_google_play_services_network_e...
+nameSuffix
+java.lang.module.ModuleDescriptor
+common_google_play_services_invalid_a...
+description
+EDGE_TO_EDGE
+LEAN_BACK
+_isTerminated
+mLk
+setFastestInterval
+LifecycleChannel
+SEALED
+CREATED
+textScaleFactor
+namePrefix
+ERROR_WHILE_ACQUIRING_POSITION
+PermissionHandler.ServiceManager
+SHOW
+SharedPreferencesPlugin
+Tiramisu
+name_ulr_private
+android:view_state
+flutter.baseflow.com/permissions/methods
+io.flutter.embedding.android.NormalTheme
+Dispatchers.Main
+INTERNAL_ERROR
+XA
+FlutterSurfaceView
+XB
+Cancelled
+notify_manager
+createFromDeprecatedProvider
+callbackWrapper
+getPosture
+pair
+generic
+android.title.big
+android.intent.action.PACKAGE_ADDED
+DATETIME
+primitiveFqNames.values
+enableSuggestions
+PASTE
+GoogleApiManager
+com.google.android.gms.signin.interna...
+android.intent.action.VIEW
+short
+IS_MULTILINE
+middleName
+window
+personFamilyName
+Cancelling
+CLIP_RRECT
+IS_HEADER
+COMPLETING_RETRY
+VISIBLE_PASSWORD
+com.google.android.gms.common.interna...
+getLocationAccuracy
+IS_FOCUSABLE
+com.google.android.gms.common.interna...
+TextInput.clearClient
+SCROLL_RIGHT
+textCapitalization
+moduleName
+android.widget.ImageView
+android.widget.RadioButton
+circles
+hybridFallback
+oemFeature
+put
+getBounds
+DialogRedirect
+TextInputType.text
+EmptyCoroutineContext
+CPU_ACQUIRED
+ACTION_ARGUMENT_SELECTION_END_INT
+embeddingCallback
+shouldShowRequestPermissionRationale
+SCROLL_LEFT
+ConnectionStatusConfig
+HapticFeedbackType.heavyImpact
+TextInputAction.search
+windowBackend
+InputConnectionAdaptor
+android:showsDialog
+flutter/platform
+com.google
+TEXTURE_WITH_HYBRID_FALLBACK
+failed_client_id
+dart_entrypoint
+tokenId
+kotlinx.coroutines.scheduler.core.poo...
+kotlinx.coroutines.scheduler.max.pool...
+android.permission.ACCESS_BACKGROUND_...
+requestLocationUpdates
+double
+android.location.LocationRequest
+newPassword
+POSTURE_HALF_OPENED
+POSTAL_ADDRESS
+smsOTPCode
+lowest
+SystemChannel
+flutter_deeplinking_enabled
+ConnectionTracker
+viewFocused
+support_context_feature_id
+HEAVY_IMPACT
+kotlin.Short
+phone
+light
+dev.flutter.pigeon.SharedPreferencesA...
+showsUserInterface
+common_google_play_services_api_unava...
+primaryActivityName.packageName
+bounds
+PUBLIC
+android.settings.MANAGE_UNKNOWN_APP_S...
+RETRY_ATOMIC
+getDisplayFeatures
+BLOCKING
+uninstallDeferredComponent
+java.lang.Throwable
+BOLD_TEXT
+Dispatchers.Unconfined
+WindowInfoTrackerCallbackAdapter.kt
+$splitsWithActivity
+flags
+PrivateApi
+SystemSound.play
+SystemUiOverlay.bottom
+onPause
+enabled
+unknown
+android.intent.action.RUN
+android.permission.ACCESS_FINE_LOCATION
+android.widget.SeekBar
+android.permission.ACCESS_NOTIFICATIO...
+low
+INITIALIZED
+android.hardware.type.watch
+mContentInsets
+LAZY
+android.permission.REQUEST_IGNORE_BAT...
+android.support.v13.view.inputmethod....
+KeyEventChannel
+PlatformViewWrapper
+producerIndex
+REMOVE
+flutter/settings
+addressLocality
+setDirection
+java.util.Map$Entry
+SendQueued
+serverAuthCode
+display
+com.google.android.gms.common.interna...
+SpellCheck.initiateSpellCheck
+composingExtent
+callbackInterface
+DeviceOrientation.landscapeLeft
+birthDateDay
+.immediate
+TextInputAction.unspecified
+libflutter.so
+char
+width
+PORTRAIT_UP
+FlutterGeolocator
+IMMERSIVE
+com.google.android.gms.signin.interna...
+kotlinx.coroutines.fast.service.loader
+TAP
+kotlin.Any
+Brightness.dark
+listen
+whileInUse
+notification
+SettingsChannel
+selectionBase
+plainCodePoint
+com.google.android.gms.common.interna...
+com.google.android.gms.signin.interna...
+_reusableCancellableContinuation
+TextInputAction.commitContent
+android.view.View
+inputType
+java.lang.Byte
+com.google.android.gms.signin.interna...
+AppBundleLocaleChanges
+BOTH
+java.lang.Cloneable
+package
+deltaEnd
+kind
+com.android.vending
+GeneratedPluginRegistrant
+com.google.android.gms.signin
+SplitPairFilter
+get_last_activity_feature_id
+is_mocked
+io.flutter.embedding.android.EnableIm...
+android.permission.REQUEST_INSTALL_PA...
+_consensus
+SCROLL_UP
+WrongConstant
+kotlin.collections.Iterator
+dev.flutter.pigeon.SharedPreferencesA...
+CLOSED_EMPTY
+speed_accuracy
+android.permission.ACTIVITY_RECOGNITION
+android.support.action.showsUserInter...
+job
+TextInputClient.requestExistingInputS...
+setLocale
+getUri
+Clipboard.setData
+TextInputType.phone
+altitude
+TextInput.sendAppPrivateCommand
+SET_TEXT
+SystemChrome.restoreSystemUIOverlays
+android:support:request_fragment_who
+consumerIndex
+point
+onCloseHandler
+com.google.android.gms.signin.interna...
+kotlin.Enum
+_removedRef
+com.google.android.gms.signin.service...
+CANCELED
+alias
+PlatformViewsChannel
+common_google_play_services_resolutio...
+deltas
+kotlin.String.Companion
+uniqueIdentifier
+pcampaignid
+move
+SplitRuleResolution
+jClass
+TextInput.show
+setPosture
+android.permission.ANSWER_PHONE_CALLS
+splitInfo.primaryActivityStack
+primaryActivityName.className
+geolocator_mslAltitude
+WindowInsetsCompat
+windowMetrics
+TEXTURE_WITH_VIRTUAL_FALLBACK
+systemNavigationBarDividerColor
+mAttachInfo
+CLIP_PATH
+NETWORK_ERROR
+suggestions
+denied
+user
+android.permission.READ_PHONE_STATE
+$splitRule
+getModule
+extent
+sidecarCompat
+resizeColumn
+java.specification.version
+plugins
+common_google_play_services_sign_in_f...
+kotlinx.coroutines.scheduler.blocking...
+tooltip
+kotlin.Cloneable
+openAppSettings
+IS_FOCUSED
+notificationIcon
+PlatformViewsController
+checkPermission
+ReceiveQueued
+flutter/keyboard
+systemStatusBarContrastEnforced
+androidx.lifecycle.LifecycleDispatche...
+getSuppressed
+kotlin.reflect.jvm.internal.Reflectio...
+.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMIS...
+PARKING
+FOLD
+DartMessenger
+addObserver
+android:target_req_state
+NotifManCompat
+profile
+HIGH_CONTRAST
+ON_ANY
+SystemNavigator.setFrameworkHandlesBack
+MOVE_CURSOR_BACKWARD_BY_WORD
+removeViewImmediate
+ar
+kotlinx.coroutines.scheduler.resoluti...
+removeView
+kotlin.Unit
+ON_PAUSE
+cancellation
+route
+getType
+birthdayDay
+kotlin.jvm.internal.StringCompanionOb...
+domain
+viewType
+editingValue
+OFFER_FAILED
+invokeSuspend
+common_google_play_services_resolutio...
+SidecarCompat
+Theme.Dialog.Alert
+getResPackage
+enabled_notification_listeners
+icon
+DROP_LATEST
+serviceIntentCall
+com.google.android.gms.location.inter...
+transparent
+java.
+SystemSoundType.click
+resizeUpDown
+GmsClientSupervisor
+background_mode
+popRoute
+NAMES_ROUTE
+throwableMethods
+defaultDisplay
+common_google_play_services_restricte...
+android.permission.SEND_SMS
+android.permission.USE_SIP
+completion
+android.permission.READ_MEDIA_VIDEO
+com.google.android.gms.location.inter...
+dev.flutter.pigeon.SharedPreferencesA...
+clearFocus
+secondaryActivityIntent
+kUp
+FRAMEWORK_CLIENT
+DETACH
+FragmentActivity
+LOCALE
+hintText
+INACTIVE
+InlinedApi
+personNamePrefix
+REL
+activityComponent.packageName
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBhIGxpc3Qu
+LICENSE_CHECK_FAILED
+android.permission.BLUETOOTH
+LayoutInflaterCompatHC
+ADD
+MEDIUM_IMPACT
+feature.rect
+missingDelimiterValue
+dev.flutter.pigeon.SharedPreferencesA...
+listener
+NotificationManagerCompat
+mFactory2
+BanParcelableUsage
+android:support:request_indicies
+installDeferredComponent
+createWorkChain
+secondaryActivityName
+ruleComponent.className
+kotlin.Boolean
+androidx.transition.FragmentTransitio...
+android.bigText
+_queue
+setSidecarCallback
+minUpdateDistanceMeters
+configurationId
+Override
+info
+DORMANT
+HYBRID_ONLY
+image
+android.permission.READ_MEDIA_AUDIO
+TextInputChannel
+componentName.className
+Failed
+OPACITY
+en
+NonDisposableHandle
+android.permission.RECORD_AUDIO
+SyntheticAccessor
+TextInputType.name
+notificationText
+navigation_bar_height
+java.lang.annotation.Annotation
+countryName
+android.permission.BLUETOOTH_CONNECT
+FlutterImageView
+nodeId
+inputAction
+frame
+android.permission.ACCESS_MEDIA_LOCATION
+SignInCoordinator
+forceLocationManager
+TERMINATED
+Localization.getStringResource
+com.google.android.instantapps.superv...
+flutter/navigation
+getCurrentPosition
+extendedAddress
+title
+content
+primaryActivity
+secondaryActivity
+kotlin.collections.Map
+ENQUEUE_FAILED
+cached_engine_group_id
+statusBarColor
+VGhpcyBpcyB0aGUgcHJlZml4IGZvciBCaWdJb...
+java.lang.Boolean
+contentCommitMimeTypes
+continuation
+class
+DISABLE_ANIMATIONS
+location_updates_with_callback
+DeferredComponentChannel
+DeviceOrientation.landscapeRight
+IconCompat
+false
+FlutterEngineCxnRegstry
+com.google.android.gms.common.telemet...
+common_google_play_services_network_e...
+keydown
+%s
+workerCtl
+activateSystemCursor
+TextInputClient.updateEditingState
+lenientToString
+SignIn.INTERNAL_API
+flutter/accessibility
+io.flutter.embedding.android.LeakVM
+resizeLeft
+failed_resolution
+fused
+pushRouteInformation
+resize
+TextEditingDelta
+DEFAULT
+TextInputAction.next
+setInitialRoute
+MethodCallHandlerImpl
+android.support.allowGeneratedReplies
+DROP_OLDEST
+splitInfoList
+android.permission.WRITE_CALENDAR
+TEXT
+lastScheduledTask
+clipboard
+birthdayMonth
+autocorrect
+inFlightTasks
+HINGE
+java.lang.Character
+HapticFeedbackType.selectionClick
+endIndex
+context
+$newLayoutInfo
+lock
+action
+com.google.android.gms.signin.interna...
+id
+text
+mLock
+birthdayYear
+SENTENCES
+isolate_snapshot_data
+TextInput.finishAutofillContext
+SPELLOUT
+com.google.android.clockwork.home.UPD...
+surface
+dev.flutter.pigeon.SharedPreferencesA...
+arch_disk_io_%d
+checkServiceStatus
+index
+signed
+_bounds
+THROTTLE_BACKGROUND
+PlatformChannel
+it
+RESOLUTION_REQUIRED
+params
+UNDECIDED
+FlutterView
+announce
+SET_PRIMARY_NAV
+TextInputType.address
+PLAIN_TEXT
+resolving_error
+getResId
+TextInputType.url
+MOVE_CURSOR_FORWARD_BY_WORD
+kotlin.jvm.internal.
+obfuscatedIdentifier
+AccessibilityChannel
+TIMEOUT
+fullStreetAddress
+set_mock_location_with_callback
+telephoneNumber
+$GPGGA
+extras
+secondaryActivityStack
+IS_EXPANDED
+file
+requestId
+RIGHT
+placeholderIntent
+CancellableContinuation
+android.summaryText
+mServedView
+onDestroy
+IS_KEYBOARD_KEY
+HIDE
+personNameSuffix
+kotlin.jvm.functions.Function
+EmbeddingCompat
+serviceResponseIntentKey
+addView
+uri
+off
+resizeLeftRight
+platformBrightness
+splitInfo.secondaryActivityStack
+TextInputAction.done
+android.widget.ScrollView
+kotlin.internal.JRE8PlatformImplement...
+io.flutter.EntrypointUri
+onSaveInstanceState
+mH
+VIRTUAL_DISPLAY_PLATFORM_VIEW
+IS_SLIDER
+newIndent
+loadingUnitId
+resizeUpLeftDownRight
+KeyboardManager
+RESUMED
+notificationTitle
+SpellCheckChannel
+newUsername
+android.permission.READ_CALENDAR
+main
+activityFilters
+suffix
+com.google.android.gms.availability
+UnknownNullness
+high
+mVisibleInsets
+personMiddleInitial
+find
+cleartextTrafficPermitted
+MissingPermission
+API_UNAVAILABLE
+DID_GAIN_ACCESSIBILITY_FOCUS
+com.google.android.gms.signin.interna...
+com.google.android.gms.location.ILoca...
+kotlin.Number
+DeviceOrientation.portraitDown
+TOO_LATE_TO_CANCEL
+NULL
+ms
+birthDateMonth
+BALANCED_POWER_ACCURACY
+kDown
+ListenableEditingState
+separator
+personMiddleName
+UNFINISHED
+io.flutter.embedding.android.Impeller...
+android.settings.LOCATION_SOURCE_SETT...
+null
+grabbing
+NavigationChannel
+background
+alwaysUse24HourFormat
+true
+dispose
+phoneNational
+UNDISPATCHED
+TextInputType.visiblePassword
+LambdaLast
+birthday
+p0
+featureBounds
+transformer
+best
+statusBarIconBrightness
+ON_OFF_SWITCH_LABELS
+ClickableViewAccessibility
+com.google.android.gms.location.inter...
+asyncTraceEnd
+android.permission.BLUETOOTH_ADVERTISE
+photoUrl
+transform
+STARTED
+activity.windowManager.maximumWindowM...
+kotlin.Comparable
+consumer
+show_password
+on
+nativeSpellCheckServiceDefined
+baseKey
+vm_snapshot_data
+Clipboard.getData
+currentDisplay
+longPress
+COROUTINE_SUSPENDED
+ACCESSIBLE_NAVIGATION
+Trace
+flutter/textinput
+_LifecycleAdapter
+Completed
+callback
+RESUME_TOKEN
+mOnKeyListener
+android.permission.READ_EXTERNAL_STORAGE
+HAS_TOGGLED_STATE
+common_google_play_services_restricte...
+IS_SELECTED
+errorWhileAcquiringPosition
+TextInput.hide
+android.support.actionExtras
+createAsync
+primaryActivityStack
+.Companion
+telephoneNumberNational
+sp_permission_handler_permission_was_...
+character
+EMAIL_ADDRESS
+java.lang.Long
+metaState
+java.util.Map
+INTERNAL
+TextInputPlugin
+android:support:next_request_index
+INTERRUPTED
+height
+CUT
+BOTTOM_OVERLAYS
+_decision
+kotlinx.coroutines.flow.AbstractFlow
+mServiceBrokerLock
+GeolocatorLocationService:Wakelock
+input_method
+oldText
+SoonBlockedPrivateApi
+Clipboard.hasStrings
+CONDITION_FALSE
+RESOLUTION_ACTIVITY_NOT_FOUND
+setCurrentState
+PERMISSION_DEFINITIONS_NOT_FOUND
+com.google.android.gms.signin.interna...
+commonPool
+statusCode
+0s
+IS_IN_MUTUALLY_EXCLUSIVE_GROUP
+activity
+sLock
+kotlin.Function
+latitude
+RTL
+long
+SystemUiMode.immersive
+HALF_OPENED
+kotlinx.coroutines.channels.defaultBu...
+classes_to_restore
+activity.windowManager.currentWindowM...
+$this$$receiver
+ImageTextureRegistryEntry
+key
+email
+kotlin.Enum.Companion
+RESOURCE
+android.type.verbatim
+creditCardExpirationDate
+service_esmobile
+silent
+GooglePlayServicesErrorDialog
+obscureText
+android:target_state
+openLocationSettings
+secondaryActivityName.packageName
+texture
+WORDS
+SELECTION_CLICK
+windowMetricsCalculator
+android.intent.category.DEFAULT
+kotlin.Float
+androidx.core.view.inputmethod.Editor...
+checkPermissionStatus
+android.support.remoteInputs
+systemNavigationBarIconBrightness
+contextMenu
+handled
+SystemNavigator.pop
+resizeRight
+autofill
+TextInputAction.newline
+TextCapitalization.none
+operation
+common_google_play_services_invalid_a...
+_prev
+android.widget.EditText
+NO_DECISION
+permissionDefinitionsNotFound
+secondaryActivity.intent
+com.google.android.gms.signin.interna...
+postalCode
+primaryColor
+rules
+Operations:
+personGivenName
+pairs
+TextInput.setEditingState
+flutter.baseflow.com/geolocator_servi...
+SERVICE_MISSING_PERMISSION
+ON_START
+birthDateFull
+windowMetrics.bounds
+TOP_OVERLAYS
+ruleComponent
+Dispatchers.Default
+kotlinx.coroutines.io.parallelism
+NUMBER
+java.util.Collection
+ic_launcher.png
+LIST_EMPTY
+componentName.packageName
+collection
+HIDDEN
+name_sleep_segment_request
+android.view.DisplayInfo
+postalAddressExtendedPostalCode
+failure
+NOT_IN_STACK
+TextInputAction.previous
+WorkSourceUtil
+CLICK
+serviceActionBundleKey
+semanticAction
+_next
+TextInputClient.onConnectionClosed
+MULTILINE
+removeObserver
+ON_DESTROY
+destination
+rule
+enableDeltaModel
+com.google.android.gms
+speed
+INVALID_ACCOUNT
+sCache
+flutter/mousecursor
+textservices
+EMPTY
+use_safe_parcelable_in_intents
+text/plain
+kotlinx.coroutines.test.internal.Test...
+creditCardExpirationYear
+CUTOUT
+flutter/system
+BlockedPrivateApi
+SystemUiMode.leanBack
+filters
+androidx.core.app.NotificationCompat$...
+HAS_IMPLICIT_SCROLLING
+onWindowLayoutChangeListenerRemoved
+Dispatchers.Main.immediate
+getLastKnownPosition
+getAttributionTag
+splitRules
+ON_CLOSE_HANDLER_INVOKED
+location
+java.lang.Object
+REMOVED_TASK
+splitInfo
+SystemChrome.setSystemUIChangeListener
+base
+extendedPostalCode
+TextInput.setPlatformViewClient
+prefix
+zoomOut
+location_mode
+none
+type
+actionLabel
+TextCapitalization.sentences
+android.hardware.type.iot
+IMMERSIVE_STICKY
+getViewRootImpl
+VERTICAL
+bestForNavigation
+appops
+delimiter
+PrivateConstructorForUtilityClass
+get_current_location
+HapticFeedbackType.mediumImpact
+tel:123123
+NONE
+primaryActivityStack.activities
+android:savedDialogState
+android.support.v4.app.INotificationS...
+wifi
+ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
+DeviceOrientation.portraitUp
+method
+hints
+CONSUMED
+systemNavigationBarContrastEnforced
+onWindowLayoutChangeListenerAdded
+java.util.Set
+keyup
+reduced
+ACTION_ARGUMENT_SELECTION_START_INT
+android.os.WorkSource$WorkChain
+push
+_state
+SHOW_ON_SCREEN
+deniedForever
+brieflyShowPassword
+setNumUpdates
+overridingDecorator
+newDeviceState
+set_mock_mode_with_callback
+kotlinx.coroutines.scheduler
+android.permission.READ_SMS
+android.support.action.semanticAction
+gender
+market://details
+java.lang.Double
+android.support.BIND_NOTIFICATION_SID...
+android.permission.BODY_SENSORS
+resizeRow
+range
+flutter/spellcheck
+usesVirtualDisplay
+IS_TOGGLED
+GooglePlayServicesUtil
+HAS_EXPANDED_STATE
+com.android.voicemail.permission.ADD_...
+feature
+NO_THREAD_ELEMENTS
+get
+tracker
+oneTimeCode
+dark
+FLAT
+getDisplayInfo
+power
+precise
+copy
+java.lang.Number
+BanUncheckedReflection
+resizeDownRight
+newLayout
+DARK
+COPY
+IS_READ_ONLY
+token
+initializer
+filter
+SystemChrome.setPreferredOrientations
+help
+phoneNumberDevice
+flutter/deferredcomponent
+android.settings.REQUEST_IGNORE_BATTE...
+elements
+java.lang.Comparable
+URI_MASKABLE
+ON_CREATE
+HAS_ENABLED_STATE
+android.widget.Switch
+LocationServiceHandler
+data
+resizeUpRightDownLeft
+ON_RESUME
+IS_ENABLED
+inject_location_with_callback
+float
+OP_SET_MAX_LIFECYCLE
+IS_BUTTON
+API_VERSION_UPDATE_REQUIRED
+postalAddressExtended
+asyncTraceBegin
+TextCapitalization.characters
+java.lang.Enum
+android.permission.ACCESS_COARSE_LOCA...
+API_DISABLED
+enableIMEPersonalizedLearning
+familyName
+heading_accuracy
+create
+TRANSFORM
+DETACHED
+Flow.kt
+android.permission.POST_NOTIFICATIONS
+TextInputType.datetime
+PERMISSION_DENIED
+android.hardware.type.embedded
+TextInputAction.go
+tap
+offset
+android.support.groupKey
+androidx.window.java.layout.WindowInf...
+SystemChrome.setApplicationSwitcherDe...
+kotlin.jvm.internal.EnumCompanionObject
+IS_HIDDEN
+distanceFilter
+io.flutter.InitialRoute
+controlState
+LOW_POWER
+transition_animation_scale
+SERVICE_INVALID
+sequence
+keyCode
+Active
+android.permission.SCHEDULE_EXACT_ALARM
+postalAddress
+kotlin.collections.Iterable
+telephoneNumberDevice
+DATA
+UTF8
+connectionStatus
+files
+flutter/localization
+HORIZONTAL
+FlutterRenderer
+mChildNodeIds
+kotlin.collections.Map.Entry
+ruleComponent.packageName
+line
+failing_client_id
+android.permission.SYSTEM_ALERT_WINDOW
+Brightness.light
+IS_CHECKED
+kotlinName
+LTR
+error
+kotlin.Byte
+network
+array
+alarm
+kotlin.collections.Set
+postfix
+value
+getWindowLayoutInfo
+opaque
+REUSABLE_CLAIMED
+java.util.Iterator
+0x%08x
+GmsClient
+dart_entrypoint_args
+onWindowFocusChanged
+TextInputClient.performAction
+jar:file:
+ON_STOP
+addressState
+kotlin.CharSequence
+android.hardware.telephony
+intent
+passive
+int
+REMOTE_EXCEPTION
+personName
+fragment
+boolean
+bluetooth
+com.google.android.wearable.app
+ImageReaderPlatformViewRenderTarget
+com.google.android.inputmethod.latin
+emit
+SCROLL_DOWN
+AccessibilityBridge
+dev.flutter.pigeon.SharedPreferencesA...
+Marking id:accessibility_action_clickable_span:2131034112 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_0:2131034113 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_1:2131034114 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_10:2131034115 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_11:2131034116 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_12:2131034117 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_13:2131034118 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_14:2131034119 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_15:2131034120 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_16:2131034121 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_17:2131034122 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_18:2131034123 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_19:2131034124 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_2:2131034125 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_20:2131034126 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_21:2131034127 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_22:2131034128 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_23:2131034129 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_24:2131034130 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_25:2131034131 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_26:2131034132 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_27:2131034133 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_28:2131034134 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_29:2131034135 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_3:2131034136 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_30:2131034137 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_31:2131034138 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_4:2131034139 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_5:2131034140 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_6:2131034141 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_7:2131034142 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_8:2131034143 used because it matches string pool constant acc
+Marking id:accessibility_custom_action_9:2131034144 used because it matches string pool constant acc
+Marking id:locale:2131034168 used because it matches string pool constant locale
+Marking attr:alwaysExpand:2130771971 used because it matches string pool constant always
+Marking id:accessibility_action_clickable_span:2131034112 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_0:2131034113 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_1:2131034114 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_10:2131034115 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_11:2131034116 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_12:2131034117 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_13:2131034118 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_14:2131034119 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_15:2131034120 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_16:2131034121 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_17:2131034122 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_18:2131034123 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_19:2131034124 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_2:2131034125 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_20:2131034126 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_21:2131034127 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_22:2131034128 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_23:2131034129 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_24:2131034130 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_25:2131034131 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_26:2131034132 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_27:2131034133 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_28:2131034134 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_29:2131034135 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_3:2131034136 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_30:2131034137 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_31:2131034138 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_4:2131034139 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_5:2131034140 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_6:2131034141 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_7:2131034142 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_8:2131034143 used because it matches string pool constant accessibility
+Marking id:accessibility_custom_action_9:2131034144 used because it matches string pool constant accessibility
+Marking id:view_tree_lifecycle_owner:2131034196 used because it matches string pool constant view
+Marking attr:primaryActivityName:2130771994 used because it matches string pool constant primaryActivityName
+Marking attr:colorScheme:2130771975 used because it matches string pool constant color
+Marking color:androidx_core_ripple_material_light:2130837504 used because it matches string pool constant android
+Marking color:androidx_core_secondary_text_default_material_light:2130837505 used because it matches string pool constant android
+Marking id:androidx_window_activity_scope:2131034152 used because it matches string pool constant android
+Marking attr:shortcutMatchRequired:2130771999 used because it matches string pool constant short
+Marking id:light:2131034165 used because it matches string pool constant light
+Marking color:notification_action_color_filter:2130837517 used because it matches string pool constant notification
+Marking color:notification_icon_bg_color:2130837518 used because it matches string pool constant notification
+Marking dimen:notification_action_icon_size:2130903047 used because it matches string pool constant notification
+Marking dimen:notification_action_text_size:2130903048 used because it matches string pool constant notification
+Marking dimen:notification_big_circle_margin:2130903049 used because it matches string pool constant notification
+Marking dimen:notification_content_margin_start:2130903050 used because it matches string pool constant notification
+Marking dimen:notification_large_icon_height:2130903051 used because it matches string pool constant notification
+Marking dimen:notification_large_icon_width:2130903052 used because it matches string pool constant notification
+Marking dimen:notification_main_column_padding_top:2130903053 used because it matches string pool constant notification
+Marking dimen:notification_media_narrow_margin:2130903054 used because it matches string pool constant notification
+Marking dimen:notification_right_icon_size:2130903055 used because it matches string pool constant notification
+Marking dimen:notification_right_side_padding_top:2130903056 used because it matches string pool constant notification
+Marking dimen:notification_small_icon_background_padding:2130903057 used because it matches string pool constant notification
+Marking dimen:notification_small_icon_size_as_large:2130903058 used because it matches string pool constant notification
+Marking dimen:notification_subtext_size:2130903059 used because it matches string pool constant notification
+Marking dimen:notification_top_pad:2130903060 used because it matches string pool constant notification
+Marking dimen:notification_top_pad_large_text:2130903061 used because it matches string pool constant notification
+Marking drawable:notification_action_background:2130968598 used because it matches string pool constant notification
+Marking drawable:notification_bg:2130968599 used because it matches string pool constant notification
+Marking drawable:notification_bg_low:2130968600 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_normal:2130968601 used because it matches string pool constant notification
+Marking drawable:notification_bg_low_pressed:2130968602 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal:2130968603 used because it matches string pool constant notification
+Marking drawable:notification_bg_normal_pressed:2130968604 used because it matches string pool constant notification
+Marking drawable:notification_icon_background:2130968605 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_bg:2130968606 used because it matches string pool constant notification
+Marking drawable:notification_template_icon_low_bg:2130968607 used because it matches string pool constant notification
+Marking drawable:notification_tile_bg:2130968608 used because it matches string pool constant notification
+Marking id:notification_background:2131034172 used because it matches string pool constant notification
+Marking id:notification_main_column:2131034173 used because it matches string pool constant notification
+Marking id:notification_main_column_container:2131034174 used because it matches string pool constant notification
+Marking layout:notification_action:2131165185 used because it matches string pool constant notification
+Marking layout:notification_action_tombstone:2131165186 used because it matches string pool constant notification
+Marking layout:notification_template_custom_big:2131165187 used because it matches string pool constant notification
+Marking layout:notification_template_icon_group:2131165188 used because it matches string pool constant notification
+Marking layout:notification_template_part_chronometer:2131165189 used because it matches string pool constant notification
+Marking layout:notification_template_part_time:2131165190 used because it matches string pool constant notification
+Marking id:icon:2131034160 used because it matches string pool constant icon
+Marking id:icon_group:2131034161 used because it matches string pool constant icon
+Marking id:icon_only:2131034162 used because it matches string pool constant icon
+Marking attr:secondaryActivityName:2130771998 used because it matches string pool constant secondaryActivityName
+Marking id:info:2131034163 used because it matches string pool constant info
+Marking attr:imageAspectRatio:2130771989 used because it matches string pool constant image
+Marking attr:imageAspectRatioAdjust:2130771990 used because it matches string pool constant image
+Marking id:title:2131034195 used because it matches string pool constant title
+Marking attr:primaryActivityName:2130771994 used because it matches string pool constant primaryActivity
+Marking attr:secondaryActivityAction:2130771997 used because it matches string pool constant secondaryActivity
+Marking attr:secondaryActivityName:2130771998 used because it matches string pool constant secondaryActivity
+Marking id:action_container:2131034145 used because it matches string pool constant action
+Marking id:action_divider:2131034146 used because it matches string pool constant action
+Marking id:action_image:2131034147 used because it matches string pool constant action
+Marking id:action_text:2131034148 used because it matches string pool constant action
+Marking id:actions:2131034149 used because it matches string pool constant action
+Marking id:text:2131034192 used because it matches string pool constant text
+Marking id:text2:2131034193 used because it matches string pool constant text
+Marking attr:activityAction:2130771968 used because it matches string pool constant activity
+Marking attr:activityName:2130771969 used because it matches string pool constant activity
+Marking id:none:2131034170 used because it matches string pool constant none
+Marking id:dark:2131034157 used because it matches string pool constant dark
+Marking id:line1:2131034166 used because it matches string pool constant line
+Marking id:line3:2131034167 used because it matches string pool constant line
+@com.tengerSoft.medvic:attr/activityAction : reachable=true
+@com.tengerSoft.medvic:attr/activityName : reachable=true
+@com.tengerSoft.medvic:attr/alpha : reachable=false
+@com.tengerSoft.medvic:attr/alwaysExpand : reachable=true
+@com.tengerSoft.medvic:attr/buttonSize : reachable=false
+@com.tengerSoft.medvic:attr/circleCrop : reachable=false
+@com.tengerSoft.medvic:attr/clearTop : reachable=false
+@com.tengerSoft.medvic:attr/colorScheme : reachable=true
+@com.tengerSoft.medvic:attr/finishPrimaryWithSecondary : reachable=false
+@com.tengerSoft.medvic:attr/finishSecondaryWithPrimary : reachable=false
+@com.tengerSoft.medvic:attr/font : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderAuthority : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderCerts : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderFetchStrategy : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderFetchTimeout : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderPackage : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderQuery : reachable=false
+@com.tengerSoft.medvic:attr/fontProviderSystemFontFamily : reachable=false
+@com.tengerSoft.medvic:attr/fontStyle : reachable=false
+@com.tengerSoft.medvic:attr/fontVariationSettings : reachable=false
+@com.tengerSoft.medvic:attr/fontWeight : reachable=false
+@com.tengerSoft.medvic:attr/imageAspectRatio : reachable=true
+@com.tengerSoft.medvic:attr/imageAspectRatioAdjust : reachable=true
+@com.tengerSoft.medvic:attr/lStar : reachable=false
+@com.tengerSoft.medvic:attr/nestedScrollViewStyle : reachable=false
+@com.tengerSoft.medvic:attr/placeholderActivityName : reachable=false
+@com.tengerSoft.medvic:attr/primaryActivityName : reachable=true
+@com.tengerSoft.medvic:attr/queryPatterns : reachable=false
+@com.tengerSoft.medvic:attr/scopeUris : reachable=false
+@com.tengerSoft.medvic:attr/secondaryActivityAction : reachable=true
+@com.tengerSoft.medvic:attr/secondaryActivityName : reachable=true
+@com.tengerSoft.medvic:attr/shortcutMatchRequired : reachable=true
+@com.tengerSoft.medvic:attr/splitLayoutDirection : reachable=false
+@com.tengerSoft.medvic:attr/splitMinSmallestWidth : reachable=false
+@com.tengerSoft.medvic:attr/splitMinWidth : reachable=false
+@com.tengerSoft.medvic:attr/splitRatio : reachable=false
+@com.tengerSoft.medvic:attr/ttcIndex : reachable=false
+@com.tengerSoft.medvic:color/androidx_core_ripple_material_light : reachable=true
+@com.tengerSoft.medvic:color/androidx_core_secondary_text_default_material_light : reachable=true
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_dark : reachable=false
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_disabled
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_pressed
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_focused
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_default
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_default : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_disabled : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_focused : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_dark_pressed : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_light : reachable=false
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_light_disabled
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_light_pressed
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_light_focused
+    @com.tengerSoft.medvic:color/common_google_signin_btn_text_light_default
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_light_default : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_light_disabled : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_light_focused : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_text_light_pressed : reachable=false
+@com.tengerSoft.medvic:color/common_google_signin_btn_tint : reachable=false
+@com.tengerSoft.medvic:color/notification_action_color_filter : reachable=true
+    @com.tengerSoft.medvic:color/androidx_core_secondary_text_default_material_light
+@com.tengerSoft.medvic:color/notification_icon_bg_color : reachable=true
+@com.tengerSoft.medvic:dimen/compat_button_inset_horizontal_material : reachable=false
+@com.tengerSoft.medvic:dimen/compat_button_inset_vertical_material : reachable=false
+@com.tengerSoft.medvic:dimen/compat_button_padding_horizontal_material : reachable=false
+@com.tengerSoft.medvic:dimen/compat_button_padding_vertical_material : reachable=false
+@com.tengerSoft.medvic:dimen/compat_control_corner_material : reachable=false
+@com.tengerSoft.medvic:dimen/compat_notification_large_icon_max_height : reachable=false
+@com.tengerSoft.medvic:dimen/compat_notification_large_icon_max_width : reachable=false
+@com.tengerSoft.medvic:dimen/notification_action_icon_size : reachable=true
+@com.tengerSoft.medvic:dimen/notification_action_text_size : reachable=true
+@com.tengerSoft.medvic:dimen/notification_big_circle_margin : reachable=true
+@com.tengerSoft.medvic:dimen/notification_content_margin_start : reachable=true
+@com.tengerSoft.medvic:dimen/notification_large_icon_height : reachable=true
+@com.tengerSoft.medvic:dimen/notification_large_icon_width : reachable=true
+@com.tengerSoft.medvic:dimen/notification_main_column_padding_top : reachable=true
+@com.tengerSoft.medvic:dimen/notification_media_narrow_margin : reachable=true
+    @com.tengerSoft.medvic:dimen/notification_content_margin_start
+@com.tengerSoft.medvic:dimen/notification_right_icon_size : reachable=true
+@com.tengerSoft.medvic:dimen/notification_right_side_padding_top : reachable=true
+@com.tengerSoft.medvic:dimen/notification_small_icon_background_padding : reachable=true
+@com.tengerSoft.medvic:dimen/notification_small_icon_size_as_large : reachable=true
+@com.tengerSoft.medvic:dimen/notification_subtext_size : reachable=true
+@com.tengerSoft.medvic:dimen/notification_top_pad : reachable=true
+@com.tengerSoft.medvic:dimen/notification_top_pad_large_text : reachable=true
+@com.tengerSoft.medvic:drawable/common_full_open_on_phone : reachable=true
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_disabled
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_focused
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_focused : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_normal : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_normal_background
+    @com.tengerSoft.medvic:drawable/googleg_standard_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_dark_normal_background : reachable=false
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_disabled : reachable=false
+    @com.tengerSoft.medvic:drawable/googleg_disabled_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_disabled
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_focused
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_focused : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_normal : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_normal_background
+    @com.tengerSoft.medvic:drawable/googleg_standard_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_icon_light_normal_background : reachable=false
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_disabled
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_focused
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_focused : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_normal : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_normal_background
+    @com.tengerSoft.medvic:drawable/googleg_standard_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_dark_normal_background : reachable=false
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_disabled : reachable=false
+    @com.tengerSoft.medvic:drawable/googleg_disabled_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_disabled
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_focused
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_focused : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_normal
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_normal : reachable=false
+    @com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_normal_background
+    @com.tengerSoft.medvic:drawable/googleg_standard_color_18
+@com.tengerSoft.medvic:drawable/common_google_signin_btn_text_light_normal_background : reachable=false
+@com.tengerSoft.medvic:drawable/googleg_disabled_color_18 : reachable=false
+@com.tengerSoft.medvic:drawable/googleg_standard_color_18 : reachable=false
+@com.tengerSoft.medvic:drawable/launch_background : reachable=false
+@com.tengerSoft.medvic:drawable/notification_action_background : reachable=true
+    @com.tengerSoft.medvic:color/androidx_core_ripple_material_light
+    @com.tengerSoft.medvic:dimen/compat_button_inset_horizontal_material
+    @com.tengerSoft.medvic:dimen/compat_button_inset_vertical_material
+    @com.tengerSoft.medvic:dimen/compat_control_corner_material
+    @com.tengerSoft.medvic:dimen/compat_button_padding_horizontal_material
+    @com.tengerSoft.medvic:dimen/compat_button_padding_vertical_material
+@com.tengerSoft.medvic:drawable/notification_bg : reachable=true
+    @com.tengerSoft.medvic:drawable/notification_bg_normal_pressed
+    @com.tengerSoft.medvic:drawable/notification_bg_normal
+@com.tengerSoft.medvic:drawable/notification_bg_low : reachable=true
+    @com.tengerSoft.medvic:drawable/notification_bg_low_pressed
+    @com.tengerSoft.medvic:drawable/notification_bg_low_normal
+@com.tengerSoft.medvic:drawable/notification_bg_low_normal : reachable=true
+@com.tengerSoft.medvic:drawable/notification_bg_low_pressed : reachable=true
+@com.tengerSoft.medvic:drawable/notification_bg_normal : reachable=true
+@com.tengerSoft.medvic:drawable/notification_bg_normal_pressed : reachable=true
+@com.tengerSoft.medvic:drawable/notification_icon_background : reachable=true
+    @com.tengerSoft.medvic:color/notification_icon_bg_color
+@com.tengerSoft.medvic:drawable/notification_template_icon_bg : reachable=true
+@com.tengerSoft.medvic:drawable/notification_template_icon_low_bg : reachable=true
+@com.tengerSoft.medvic:drawable/notification_tile_bg : reachable=true
+    @com.tengerSoft.medvic:drawable/notify_panel_notification_icon_bg
+@com.tengerSoft.medvic:drawable/notify_panel_notification_icon_bg : reachable=false
+@com.tengerSoft.medvic:id/accessibility_action_clickable_span : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_0 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_1 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_10 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_11 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_12 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_13 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_14 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_15 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_16 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_17 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_18 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_19 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_2 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_20 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_21 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_22 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_23 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_24 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_25 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_26 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_27 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_28 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_29 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_3 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_30 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_31 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_4 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_5 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_6 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_7 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_8 : reachable=true
+@com.tengerSoft.medvic:id/accessibility_custom_action_9 : reachable=true
+@com.tengerSoft.medvic:id/action_container : reachable=true
+@com.tengerSoft.medvic:id/action_divider : reachable=true
+@com.tengerSoft.medvic:id/action_image : reachable=true
+@com.tengerSoft.medvic:id/action_text : reachable=true
+@com.tengerSoft.medvic:id/actions : reachable=true
+@com.tengerSoft.medvic:id/adjust_height : reachable=false
+@com.tengerSoft.medvic:id/adjust_width : reachable=false
+@com.tengerSoft.medvic:id/androidx_window_activity_scope : reachable=true
+@com.tengerSoft.medvic:id/async : reachable=false
+@com.tengerSoft.medvic:id/auto : reachable=false
+@com.tengerSoft.medvic:id/blocking : reachable=false
+@com.tengerSoft.medvic:id/chronometer : reachable=false
+@com.tengerSoft.medvic:id/dark : reachable=true
+@com.tengerSoft.medvic:id/dialog_button : reachable=false
+@com.tengerSoft.medvic:id/forever : reachable=false
+@com.tengerSoft.medvic:id/icon : reachable=true
+@com.tengerSoft.medvic:id/icon_group : reachable=true
+@com.tengerSoft.medvic:id/icon_only : reachable=true
+@com.tengerSoft.medvic:id/info : reachable=true
+@com.tengerSoft.medvic:id/italic : reachable=false
+@com.tengerSoft.medvic:id/light : reachable=true
+@com.tengerSoft.medvic:id/line1 : reachable=true
+@com.tengerSoft.medvic:id/line3 : reachable=true
+@com.tengerSoft.medvic:id/locale : reachable=true
+@com.tengerSoft.medvic:id/ltr : reachable=false
+@com.tengerSoft.medvic:id/none : reachable=true
+@com.tengerSoft.medvic:id/normal : reachable=false
+@com.tengerSoft.medvic:id/notification_background : reachable=true
+@com.tengerSoft.medvic:id/notification_main_column : reachable=true
+@com.tengerSoft.medvic:id/notification_main_column_container : reachable=true
+@com.tengerSoft.medvic:id/right_icon : reachable=false
+@com.tengerSoft.medvic:id/right_side : reachable=false
+@com.tengerSoft.medvic:id/rtl : reachable=false
+@com.tengerSoft.medvic:id/standard : reachable=false
+@com.tengerSoft.medvic:id/tag_accessibility_actions : reachable=false
+@com.tengerSoft.medvic:id/tag_accessibility_clickable_spans : reachable=false
+@com.tengerSoft.medvic:id/tag_accessibility_heading : reachable=false
+@com.tengerSoft.medvic:id/tag_accessibility_pane_title : reachable=true
+@com.tengerSoft.medvic:id/tag_on_apply_window_listener : reachable=true
+@com.tengerSoft.medvic:id/tag_on_receive_content_listener : reachable=false
+@com.tengerSoft.medvic:id/tag_on_receive_content_mime_types : reachable=false
+@com.tengerSoft.medvic:id/tag_screen_reader_focusable : reachable=false
+@com.tengerSoft.medvic:id/tag_state_description : reachable=false
+@com.tengerSoft.medvic:id/tag_transition_group : reachable=true
+@com.tengerSoft.medvic:id/tag_unhandled_key_event_manager : reachable=true
+@com.tengerSoft.medvic:id/tag_unhandled_key_listeners : reachable=true
+@com.tengerSoft.medvic:id/tag_window_insets_animation_callback : reachable=true
+@com.tengerSoft.medvic:id/text : reachable=true
+@com.tengerSoft.medvic:id/text2 : reachable=true
+@com.tengerSoft.medvic:id/time : reachable=false
+@com.tengerSoft.medvic:id/title : reachable=true
+@com.tengerSoft.medvic:id/view_tree_lifecycle_owner : reachable=true
+@com.tengerSoft.medvic:id/wide : reachable=false
+@com.tengerSoft.medvic:integer/google_play_services_version : reachable=true
+@com.tengerSoft.medvic:integer/status_bar_notification_info_maxnum : reachable=false
+@com.tengerSoft.medvic:layout/custom_dialog : reachable=false
+@com.tengerSoft.medvic:layout/notification_action : reachable=true
+    @com.tengerSoft.medvic:style/Widget_Compat_NotificationActionContainer
+    @com.tengerSoft.medvic:dimen/notification_action_icon_size
+    @com.tengerSoft.medvic:style/Widget_Compat_NotificationActionText
+@com.tengerSoft.medvic:layout/notification_action_tombstone : reachable=true
+    @com.tengerSoft.medvic:style/Widget_Compat_NotificationActionContainer
+    @com.tengerSoft.medvic:dimen/notification_action_icon_size
+    @com.tengerSoft.medvic:style/Widget_Compat_NotificationActionText
+@com.tengerSoft.medvic:layout/notification_template_custom_big : reachable=true
+    @com.tengerSoft.medvic:dimen/notification_large_icon_width
+    @com.tengerSoft.medvic:dimen/notification_large_icon_height
+    @com.tengerSoft.medvic:dimen/notification_main_column_padding_top
+    @com.tengerSoft.medvic:dimen/notification_content_margin_start
+    @com.tengerSoft.medvic:dimen/notification_right_side_padding_top
+    @com.tengerSoft.medvic:layout/notification_template_part_time
+    @com.tengerSoft.medvic:layout/notification_template_part_chronometer
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Info
+    @com.tengerSoft.medvic:layout/notification_template_icon_group
+@com.tengerSoft.medvic:layout/notification_template_icon_group : reachable=true
+    @com.tengerSoft.medvic:dimen/notification_large_icon_width
+    @com.tengerSoft.medvic:dimen/notification_large_icon_height
+    @com.tengerSoft.medvic:dimen/notification_big_circle_margin
+    @com.tengerSoft.medvic:dimen/notification_right_icon_size
+@com.tengerSoft.medvic:layout/notification_template_part_chronometer : reachable=true
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Time
+@com.tengerSoft.medvic:layout/notification_template_part_time : reachable=true
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Time
+@com.tengerSoft.medvic:mipmap/medvic_logo : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_enable_button : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_enable_text : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_enable_title : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_install_button : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_install_text : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_install_title : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_notification_channel_name : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_notification_ticker : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_unknown_issue : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_unsupported_text : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_update_button : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_update_text : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_update_title : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_updating_text : reachable=true
+@com.tengerSoft.medvic:string/common_google_play_services_wear_update_text : reachable=true
+@com.tengerSoft.medvic:string/common_open_on_phone : reachable=true
+@com.tengerSoft.medvic:string/common_signin_button_text : reachable=false
+@com.tengerSoft.medvic:string/common_signin_button_text_long : reachable=false
+@com.tengerSoft.medvic:string/status_bar_notification_info_overflow : reachable=false
+@com.tengerSoft.medvic:style/LaunchTheme : reachable=true
+    @com.tengerSoft.medvic:drawable/launch_background
+@com.tengerSoft.medvic:style/NormalTheme : reachable=true
+@com.tengerSoft.medvic:style/TextAppearance_Compat_Notification : reachable=false
+@com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Info : reachable=false
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification
+@com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Line2 : reachable=false
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Info
+@com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Time : reachable=false
+    @com.tengerSoft.medvic:style/TextAppearance_Compat_Notification
+@com.tengerSoft.medvic:style/TextAppearance_Compat_Notification_Title : reachable=false
+@com.tengerSoft.medvic:style/Widget_Compat_NotificationActionContainer : reachable=false
+    @com.tengerSoft.medvic:drawable/notification_action_background
+@com.tengerSoft.medvic:style/Widget_Compat_NotificationActionText : reachable=false
+    @com.tengerSoft.medvic:color/androidx_core_secondary_text_default_material_light
+    @com.tengerSoft.medvic:dimen/notification_action_text_size
+
+The root reachable resources are:
+ attr:activityAction:2130771968
+ attr:activityName:2130771969
+ attr:alwaysExpand:2130771971
+ attr:colorScheme:2130771975
+ attr:imageAspectRatio:2130771989
+ attr:imageAspectRatioAdjust:2130771990
+ attr:primaryActivityName:2130771994
+ attr:secondaryActivityAction:2130771997
+ attr:secondaryActivityName:2130771998
+ attr:shortcutMatchRequired:2130771999
+ color:androidx_core_ripple_material_light:2130837504
+ color:androidx_core_secondary_text_default_material_light:2130837505
+ color:notification_action_color_filter:2130837517
+ color:notification_icon_bg_color:2130837518
+ dimen:notification_action_icon_size:2130903047
+ dimen:notification_action_text_size:2130903048
+ dimen:notification_big_circle_margin:2130903049
+ dimen:notification_content_margin_start:2130903050
+ dimen:notification_large_icon_height:2130903051
+ dimen:notification_large_icon_width:2130903052
+ dimen:notification_main_column_padding_top:2130903053
+ dimen:notification_media_narrow_margin:2130903054
+ dimen:notification_right_icon_size:2130903055
+ dimen:notification_right_side_padding_top:2130903056
+ dimen:notification_small_icon_background_padding:2130903057
+ dimen:notification_small_icon_size_as_large:2130903058
+ dimen:notification_subtext_size:2130903059
+ dimen:notification_top_pad:2130903060
+ dimen:notification_top_pad_large_text:2130903061
+ drawable:common_full_open_on_phone:2130968576
+ drawable:notification_action_background:2130968598
+ drawable:notification_bg:2130968599
+ drawable:notification_bg_low:2130968600
+ drawable:notification_bg_low_normal:2130968601
+ drawable:notification_bg_low_pressed:2130968602
+ drawable:notification_bg_normal:2130968603
+ drawable:notification_bg_normal_pressed:2130968604
+ drawable:notification_icon_background:2130968605
+ drawable:notification_template_icon_bg:2130968606
+ drawable:notification_template_icon_low_bg:2130968607
+ drawable:notification_tile_bg:2130968608
+ id:accessibility_action_clickable_span:2131034112
+ id:accessibility_custom_action_0:2131034113
+ id:accessibility_custom_action_1:2131034114
+ id:accessibility_custom_action_10:2131034115
+ id:accessibility_custom_action_11:2131034116
+ id:accessibility_custom_action_12:2131034117
+ id:accessibility_custom_action_13:2131034118
+ id:accessibility_custom_action_14:2131034119
+ id:accessibility_custom_action_15:2131034120
+ id:accessibility_custom_action_16:2131034121
+ id:accessibility_custom_action_17:2131034122
+ id:accessibility_custom_action_18:2131034123
+ id:accessibility_custom_action_19:2131034124
+ id:accessibility_custom_action_2:2131034125
+ id:accessibility_custom_action_20:2131034126
+ id:accessibility_custom_action_21:2131034127
+ id:accessibility_custom_action_22:2131034128
+ id:accessibility_custom_action_23:2131034129
+ id:accessibility_custom_action_24:2131034130
+ id:accessibility_custom_action_25:2131034131
+ id:accessibility_custom_action_26:2131034132
+ id:accessibility_custom_action_27:2131034133
+ id:accessibility_custom_action_28:2131034134
+ id:accessibility_custom_action_29:2131034135
+ id:accessibility_custom_action_3:2131034136
+ id:accessibility_custom_action_30:2131034137
+ id:accessibility_custom_action_31:2131034138
+ id:accessibility_custom_action_4:2131034139
+ id:accessibility_custom_action_5:2131034140
+ id:accessibility_custom_action_6:2131034141
+ id:accessibility_custom_action_7:2131034142
+ id:accessibility_custom_action_8:2131034143
+ id:accessibility_custom_action_9:2131034144
+ id:action_container:2131034145
+ id:action_divider:2131034146
+ id:action_image:2131034147
+ id:action_text:2131034148
+ id:actions:2131034149
+ id:androidx_window_activity_scope:2131034152
+ id:dark:2131034157
+ id:icon:2131034160
+ id:icon_group:2131034161
+ id:icon_only:2131034162
+ id:info:2131034163
+ id:light:2131034165
+ id:line1:2131034166
+ id:line3:2131034167
+ id:locale:2131034168
+ id:none:2131034170
+ id:notification_background:2131034172
+ id:notification_main_column:2131034173
+ id:notification_main_column_container:2131034174
+ id:tag_accessibility_pane_title:2131034182
+ id:tag_on_apply_window_listener:2131034183
+ id:tag_transition_group:2131034188
+ id:tag_unhandled_key_event_manager:2131034189
+ id:tag_unhandled_key_listeners:2131034190
+ id:tag_window_insets_animation_callback:2131034191
+ id:text:2131034192
+ id:text2:2131034193
+ id:title:2131034195
+ id:view_tree_lifecycle_owner:2131034196
+ integer:google_play_services_version:2131099648
+ layout:notification_action:2131165185
+ layout:notification_action_tombstone:2131165186
+ layout:notification_template_custom_big:2131165187
+ layout:notification_template_icon_group:2131165188
+ layout:notification_template_part_chronometer:2131165189
+ layout:notification_template_part_time:2131165190
+ mipmap:medvic_logo:2131230720
+ string:common_google_play_services_enable_button:2131296256
+ string:common_google_play_services_enable_text:2131296257
+ string:common_google_play_services_enable_title:2131296258
+ string:common_google_play_services_install_button:2131296259
+ string:common_google_play_services_install_text:2131296260
+ string:common_google_play_services_install_title:2131296261
+ string:common_google_play_services_notification_channel_name:2131296262
+ string:common_google_play_services_notification_ticker:2131296263
+ string:common_google_play_services_unknown_issue:2131296264
+ string:common_google_play_services_unsupported_text:2131296265
+ string:common_google_play_services_update_button:2131296266
+ string:common_google_play_services_update_text:2131296267
+ string:common_google_play_services_update_title:2131296268
+ string:common_google_play_services_updating_text:2131296269
+ string:common_google_play_services_wear_update_text:2131296270
+ string:common_open_on_phone:2131296271
+ style:LaunchTheme:2131361792
+ style:NormalTheme:2131361793
+Skipped unused resource base/res/color/common_google_signin_btn_text_dark.xml: 1105 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/color/common_google_signin_btn_text_light.xml: 1113 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/color/common_google_signin_btn_tint.xml: 409 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_dark.xml: 844 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_dark_focused.xml: 1017 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_dark_normal.xml: 567 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_disabled.xml: 1261 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_light.xml: 848 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_light_focused.xml: 1019 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_icon_light_normal.xml: 569 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_dark.xml: 844 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_dark_focused.xml: 1017 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_dark_normal.xml: 659 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_disabled.xml: 1355 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_light.xml: 848 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_light_focused.xml: 1019 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable/common_google_signin_btn_text_light_normal.xml: 661 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 610 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 500 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 615 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 465 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/googleg_disabled_color_18.png: 281 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-mdpi-v4/googleg_standard_color_18.png: 562 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 897 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 683 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 960 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 694 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/googleg_disabled_color_18.png: 410 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-hdpi-v4/googleg_standard_color_18.png: 808 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1032 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 776 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1086 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 808 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/googleg_disabled_color_18.png: 516 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-xhdpi-v4/googleg_standard_color_18.png: 982 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 1510 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png: 1138 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png: 1638 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png: 1255 bytes (replaced with small dummy file of size 77 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 727 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1441 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource base/res/layout/custom_dialog.xml: 828 bytes (replaced with small dummy file of size 9 bytes)

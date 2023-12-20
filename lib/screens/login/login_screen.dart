@@ -141,9 +141,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       } else if (passwordController.text.isEmpty) {
                         Utils.flushBarErrorMessage(
                             'Нууц үг оруулна уу', context);
-                      } else if (passwordController.text.length < 3) {
-                        Utils.flushBarErrorMessage(
-                            '6 оронтой тоо оруулна уу', context);
                       } else {
                         main();
                         print('logged in');

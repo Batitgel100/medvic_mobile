@@ -50,6 +50,7 @@ dependencies:
   latlong2: ^0.8.2
   shimmer: ^3.0.0
   pull_to_refresh: ^2.0.0
+  rename: ^3.0.1
 
 dev_dependencies:
   flutter_test:

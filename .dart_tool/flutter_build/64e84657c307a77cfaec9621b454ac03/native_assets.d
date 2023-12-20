@@ -1,0 +1,1 @@
+ /Users/unurjargal/Documents/GitHub/medvic_mobile/.dart_tool/flutter_build/64e84657c307a77cfaec9621b454ac03/native_assets.yaml: 

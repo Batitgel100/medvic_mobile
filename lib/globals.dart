@@ -17,7 +17,7 @@ class Globals {
   static late int timer;
   static double lat = 0.0;
   static double long = 0.0;
-
+  static String userName = '';
   static void changeGmail(String a) {
     gmail = a;
   }
@@ -32,6 +32,14 @@ class Globals {
 
   static String getCompany() {
     return company;
+  }
+
+  static void changeUserName(String a) {
+    userName = a;
+  }
+
+  static String getUserName() {
+    return userName;
   }
 
   static void changeUserId(int a) {
