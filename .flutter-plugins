@@ -1,4 +1,9 @@
 # This is a generated file; do not edit or check into version control.
+camera=/Users/unurjargal/.pub-cache/hosted/pub.dev/camera-0.10.5+7/
+camera_android=/Users/unurjargal/.pub-cache/hosted/pub.dev/camera_android-0.10.8+15/
+camera_avfoundation=/Users/unurjargal/.pub-cache/hosted/pub.dev/camera_avfoundation-0.9.13+8/
+camera_web=/Users/unurjargal/.pub-cache/hosted/pub.dev/camera_web-0.3.2+3/
+flutter_plugin_android_lifecycle=/Users/unurjargal/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.17/
 geolocator=/Users/unurjargal/.pub-cache/hosted/pub.dev/geolocator-10.1.0/
 geolocator_android=/Users/unurjargal/.pub-cache/hosted/pub.dev/geolocator_android-4.4.0/
 geolocator_apple=/Users/unurjargal/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.2/

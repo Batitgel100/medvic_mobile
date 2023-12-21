@@ -6,8 +6,10 @@
 // @dart = 2.19
 
 import 'dart:io'; // flutter_ignore: dart_io_import.
+import 'package:camera_android/camera_android.dart';
 import 'package:geolocator_android/geolocator_android.dart';
 import 'package:shared_preferences_android/shared_preferences_android.dart';
+import 'package:camera_avfoundation/camera_avfoundation.dart';
 import 'package:geolocator_apple/geolocator_apple.dart';
 import 'package:shared_preferences_foundation/shared_preferences_foundation.dart';
 import 'package:path_provider_linux/path_provider_linux.dart';
@@ -23,6 +25,15 @@ class _PluginRegistrant {
   @pragma('vm:entry-point')
   static void register() {
     if (Platform.isAndroid) {
+      try {
+        AndroidCamera.registerWith();
+      } catch (err) {
+        print(
+          '`camera_android` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
       try {
         GeolocatorAndroid.registerWith();
       } catch (err) {
@@ -42,6 +53,15 @@ class _PluginRegistrant {
       }
 
     } else if (Platform.isIOS) {
+      try {
+        AVFoundationCamera.registerWith();
+      } catch (err) {
+        print(
+          '`camera_avfoundation` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
       try {
         GeolocatorApple.registerWith();
       } catch (err) {

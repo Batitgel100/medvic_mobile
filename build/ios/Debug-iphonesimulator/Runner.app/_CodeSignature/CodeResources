@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		KDdGRWxHlTwsSEI9VM/fhcMsQ3k=
+		pakCXzv+91WDK1G7c6CgY3P2XUE=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		JfvgUnLKPgxtznOV87XSIc+Faa4=
+		pH/tKSCGy7gs5kDW+rYSpz2gwb4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		0o8yfqlLD/WSKET9ss0wTF4zzP0=
+		wj9990+AkwAolt8OXApO5Tqh8Rg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/512medvic.png</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		xHlTdsn6dbWSDmG3jaRAL3kxohY=
+		vMRm3D1IqjJLxeKf45Zo/cLvy70=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -188,6 +188,18 @@
 		<data>
 		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
 		</data>
+		<key>Frameworks/camera_avfoundation.framework/Info.plist</key>
+		<data>
+		tBa7UnYexb6EgbNXSnl0UDMoKtQ=
+		</data>
+		<key>Frameworks/camera_avfoundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		SloBhBfYe4zFaL/9uEilArmTsg0=
+		</data>
+		<key>Frameworks/camera_avfoundation.framework/camera_avfoundation</key>
+		<data>
+		UEZOnEN0rYgHzSviasuXLuGEyP0=
+		</data>
 		<key>Frameworks/geolocator_apple.framework/Info.plist</key>
 		<data>
 		E14pVFQQy5JsVQMt0wIrXXvALTI=
@@ -214,7 +226,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fxANk4vE6mNvxK87lgpPaUUuPu8=
+		QrYz4jj8K23YJNybnfeCBhET5rs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -297,7 +309,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CAAwmoaa533dTJXzbqAN+xSbBokAUMdvAV7aCoIg/+M=
+			FkMP/mMXKrHoNz0FM1yo0sjNciRMQzbk369xcqqzqbw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -311,7 +323,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zyS9UGMjWhpjcefOwc9k27uDf5TZWARCKIld1cowJZU=
+			sc9LTVKBaWdumLNJIVGn+EJgJ/ATU63paPpH3UkWqp0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -339,7 +351,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R239QhP8QUWjZqinS5oAlxc9UgNetoZIaScFE3CULcw=
+			ro76683jqliHU+V9f5VQWpcqmDYY8K5VO1kf7l+a8WI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/512medvic.png</key>
@@ -374,7 +386,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ccMG3Lk1j8WQqy8DlLG3g5A4SysfKNG1gx8MKUhZcHg=
+			5u8h6TtOnwCDXbQQrV9tJFCL9sFBat23RIdynj7WY74=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -543,6 +555,27 @@
 			<key>hash2</key>
 			<data>
 			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
+			</data>
+		</dict>
+		<key>Frameworks/camera_avfoundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s7WqgfsOwYhc37ANE3NuwqF+3S2VPaoNvURqAx5k4r8=
+			</data>
+		</dict>
+		<key>Frameworks/camera_avfoundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kcwSALkzxEY/nwLvRpOJXY1NUCusmTpLUSBw/rndqtw=
+			</data>
+		</dict>
+		<key>Frameworks/camera_avfoundation.framework/camera_avfoundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DufLXVy7Urfg5zhtprU+jLqcOg3NanrsdokZKTn0Aog=
 			</data>
 		</dict>
 		<key>Frameworks/geolocator_apple.framework/Info.plist</key>

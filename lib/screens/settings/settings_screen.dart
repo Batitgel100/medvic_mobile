@@ -68,7 +68,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 return const Center(
                   child: Text(
                     'Интернэт холболтоо шалгана уу!',
-                    style: TextStyles.black17,
+                    style: TextStyles.black16,
                   ),
                 );
               } else if (snapshot.hasData) {
@@ -109,7 +109,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               ),
                               Text(
                                 employee.jobTitle.toString(),
-                                style: TextStyles.black17semibold,
+                                style: TextStyles.black16semibold,
                               ),
                               SizedBox(
                                 height:
@@ -160,16 +160,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                   ],
                 );
-
-                // Column(
-                //   crossAxisAlignment: CrossAxisAlignment.start,
-                //   children: [
-                //     Text('Name: ${employee.name}'),
-                //     Text('Job Title: ${employee.jobTitle}'),
-                //     Text('Mobile Phone: ${employee.mobilePhone}'),
-                //     // Add more Text widgets for other employee information here
-                //   ],
-                // );
               } else {
                 return const Text('No employee data available');
               }
@@ -177,7 +167,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           const Spacer(),
           SizedBox(
-            // height: MediaQuery.of(context).size.height * 0.10,
             child: InkWell(
               onTap: logout,
               child: Container(
@@ -190,7 +179,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 child: const Center(
                   child: Text(
                     'Гарах',
-                    style: TextStyles.white17semibold,
+                    style: TextStyles.white16semibold,
                   ),
                 ),
               ),
@@ -226,7 +215,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             children: [
               Text(
                 dynamicText,
-                style: TextStyles.white17semibold,
+                style: TextStyles.white16semibold,
               ),
               Text(
                 defualtText,

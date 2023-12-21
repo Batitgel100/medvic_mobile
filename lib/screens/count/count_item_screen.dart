@@ -86,7 +86,7 @@ class _CountItemScreenState extends State<CountItemScreen> {
                     child: const Center(
                       child: Text(
                         'data',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                     ),
                   ),
@@ -101,7 +101,7 @@ class _CountItemScreenState extends State<CountItemScreen> {
                     child: const Center(
                       child: Text(
                         'data',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                     ),
                   ),
@@ -116,7 +116,7 @@ class _CountItemScreenState extends State<CountItemScreen> {
                     child: const Center(
                       child: Text(
                         'data',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                     ),
                   ),
@@ -139,15 +139,15 @@ class _CountItemScreenState extends State<CountItemScreen> {
                     children: const [
                       Text(
                         'data:',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                       Text(
                         'data:',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                       Text(
                         'data:',
-                        style: TextStyles.white17,
+                        style: TextStyles.white16,
                       ),
                     ],
                   ),

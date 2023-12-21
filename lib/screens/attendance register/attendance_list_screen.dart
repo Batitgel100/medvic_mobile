@@ -128,64 +128,57 @@ class _TestScreenState extends State<TestScreen> {
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 20.0),
-      child: Column(
-        children: [
-          Container(
-            height: MediaQuery.of(context).size.height * 0.09,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              color: AppColors.mainColor,
-            ),
-            child: Center(
-              child: Text(
-                formattedDateTime,
-                style: TextStyles.white23,
-              ),
-            ),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Container(
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+            boxShadow: const [BoxShadows.shadow3]),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height * 0.065,
-                width: MediaQuery.of(context).size.width * 0.44,
+                height: 40,
+                padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: AppColors.secondaryColor,
-                ),
+                    borderRadius: BorderRadius.circular(15),
+                    color: AppColors.secondBlack),
                 child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: .0),
-                    child: Text(
-                      '$textcame $formattedTime',
-                      style: TextStyles.white17,
-                    ),
+                  child: Text(
+                    formattedDateTime,
+                    style: TextStyles.white16semibold,
                   ),
                 ),
               ),
-              Container(
-                height: MediaQuery.of(context).size.height * 0.065,
-                width: MediaQuery.of(context).size.width * 0.44,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: AppColors.secondaryColor,
-                ),
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 0.0),
-                    child: Text(
-                      '$textgone ${formattedGone!}',
-                      style: TextStyles.white17,
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: .0),
+                      child: Text(
+                        '$textcame $formattedTime',
+                        style: TextStyles.black16,
+                      ),
                     ),
                   ),
-                ),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                      child: Text(
+                        '$textgone ${formattedGone!}',
+                        style: TextStyles.black16,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }

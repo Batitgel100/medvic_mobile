@@ -21,7 +21,7 @@ class CustomDrawer extends StatelessWidget {
             ),
             child: Text(
               'Цэс',
-              style: TextStyles.white22semibold,
+              style: TextStyles.white16semibold,
             ),
           ),
           ListTile(
@@ -31,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
             ),
             title: const Text(
               'Ирц харах',
-              style: TextStyles.white22,
+              style: TextStyles.white16,
             ),
             onTap: () {
               Navigator.pushNamed(context, RoutesName.attendanceScreen);

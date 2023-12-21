@@ -1,9 +1,12 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:erp_medvic_mobile/app_types.dart';
 import 'package:erp_medvic_mobile/components/custom_drawer.dart';
 import 'package:erp_medvic_mobile/constant/constant.dart';
 import 'package:erp_medvic_mobile/globals.dart';
+import 'package:erp_medvic_mobile/screens/attendance%20register/camera_leave.dart';
+import 'package:erp_medvic_mobile/screens/attendance%20register/open_camera.dart';
 import 'package:erp_medvic_mobile/service/attendance_list_repo.dart';
 import 'package:erp_medvic_mobile/service/company_name_repo.dart';
 import 'package:erp_medvic_mobile/service/register_attendance.dart';
@@ -27,6 +30,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   var desiredLocation = LatLng(Globals.getlong(), Globals.getlat());
   double desiredRadius = 50.0;
   RegisterAttendance registerAttendance = RegisterAttendance();
+
   TodayWorkedHoursApiClient todayWorkedHourApiClient =
       TodayWorkedHoursApiClient();
   RegisterAttendanceLeft registerLeft = RegisterAttendanceLeft();
@@ -38,7 +42,9 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   late Timer inactivityTimer;
   int storedId = 0;
   CompanyNameRepository getcompany = CompanyNameRepository();
+  String capturedImageBase64 = '';
   final GlobalKey<ScaffoldState> _key = GlobalKey();
+
   @override
   void initState() {
     super.initState();
@@ -50,8 +56,10 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
     getDate();
     _loadId();
     _onRefresh();
+
     getcompany.getCompanyName();
   }
+  // Хэрэглэгчийг гаргах (600 секунд)
 
   void startInactivityTimer() {
     inactivityTimer = Timer(
@@ -142,73 +150,42 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
   bool _refreshData = false;
 //Ирц бүртгэх
 
-  void onCame() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text('Ирсэнээр бүргүүлэх үү?'),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: InkWell(
-                      onTap: () {
+  void registerCame() {
+    if (isInLocation == false) {
+      if (capturedImageBase64.isEmpty) {
+        showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  content: const Text('Та итгэлтэй байна уу?'),
+                  actions: [
+                    ElevatedButton(
+                      onPressed: () {
                         Navigator.pop(context);
-                        registerCame();
-                        setState(() {});
-                        _onRefresh();
                       },
-                      child: Container(
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            color: AppColors.mainColor),
-                        child: const Center(
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                vertical: 15.0, horizontal: 20),
-                            child: Text(
-                              'Тийм',
-                              style: TextStyles.white17semibold,
+                      child: const Text('Үгүй'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => CameraApp(
+                              onImageCaptured: (imageData) {
+                                capturedImageBase64 = imageData;
+                                setState(() {});
+                                print('Captured Image Data: $imageData');
+                              },
+                              isInLocation: isInLocation,
                             ),
                           ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Expanded(
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.pop(context);
+                        );
                       },
-                      child: const Center(
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(vertical: 15.0),
-                          child: Text(
-                            'Үгүй',
-                            style: TextStyles.red17,
-                          ),
-                        ),
-                      ),
+                      child: const Text('Тийм'),
                     ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
-  void registerCame() {
-    if (isInLocation == true) {
-      registerAttendance.register(context);
+                  ],
+                ));
+      } else {}
       //   // Utils.flushBarSuccessMessage('Амжилттай бүртгэгдлээ.', context);
     } else {
       Utils.flushBarErrorMessage('Хол зайтай байна.', context);
@@ -220,7 +197,11 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
     if (Globals.getregid() == 0) {
       Utils.flushBarErrorMessage('Ирсэн цаг бүргэгдээгүй байна.', context);
     } else {
-      registerLeft.register(context);
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (_) => CameraAppLeave(
+                  onImageCaptured: (image) {}, isInLocation: isInLocation)));
       // Utils.flushBarSuccessMessage('Амжилттай бүртгэгдлээ.', context);
     }
   }
@@ -230,57 +211,22 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            title: const Text(
-              'Явсанаар бүргүүлэх үү?',
-            ),
+            content: const Text('Та итгэлтэй байна уу?'),
             actions: [
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pop(context);
-                          registerLeeave();
-                          setState(() {});
-                          _onRefresh();
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12),
-                              color: AppColors.mainColor),
-                          child: const Center(
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                  vertical: 15.0, horizontal: 20),
-                              child: Text(
-                                'Тийм',
-                                style: TextStyles.white17semibold,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: const Center(
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(vertical: 15.0),
-                            child: Text(
-                              'Үгүй',
-                              style: TextStyles.red17,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('Үгүй'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  registerLeeave();
+                  setState(() {});
+                  _onRefresh();
+                },
+                child: const Text('Тийм'),
               ),
             ],
           );
@@ -289,143 +235,188 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      child: Scaffold(
-        key: _key,
-        appBar: _appbar(),
-        endDrawer: const CustomDrawer(),
-        body: Padding(
-          padding: const EdgeInsets.all(0.0),
-          child: Center(
-            child: RefreshIndicator(
-              onRefresh: _onRefresh,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // _buildName(),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      // right: 20.0,
-                      top: 30,
-                    ),
-                    child: Container(
-                      height: 80,
-                      width: MediaQuery.of(context).size.width * 0.95,
-                      decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(12),
-                            bottomRight: Radius.circular(12),
-                          ),
-                          boxShadow: [BoxShadows.shadow3]),
-                      child: Column(
+    return Scaffold(
+      key: _key,
+      appBar: _appbar(),
+      endDrawer: const CustomDrawer(),
+      body: Padding(
+        padding: const EdgeInsets.all(00.0),
+        child: Center(
+          child: RefreshIndicator(
+            onRefresh: _onRefresh,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(
+                  height: 25,
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.09,
+                  width: MediaQuery.of(context).size.width * 0.95,
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(12),
+                        bottomRight: Radius.circular(12),
+                      ),
+                      boxShadow: [BoxShadows.shadow3]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.all(20.0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                const Icon(
-                                  Icons.calendar_month,
-                                  size: 30,
-                                  color: AppColors.mainColor,
-                                ),
-                                // const SizedBox(
-                                //   width: 5,
-                                // ),
-                                _buildThirtyDay(),
-                              ],
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 30.0),
+                            child: Icon(
+                              Icons.calendar_month,
+                              size: 30,
+                              color: AppColors.mainColor,
                             ),
                           ),
+                          // const SizedBox(
+                          //   width: 5,
+                          // ),
+                          _buildThirtyDay(),
                         ],
                       ),
-                    ),
+                    ],
                   ),
-                  const SizedBox(
-                    height: 10,
-                  ),
-                  _title(),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 20,
-                    ),
-                    child: Container(
-                      height: cameRegistered ? 150 : 80,
-                      width: MediaQuery.of(context).size.width * 0.95,
-                      decoration: const BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(12),
-                            bottomRight: Radius.circular(12),
-                          ),
-                          boxShadow: [BoxShadows.shadow3]),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                ),
+                _title(),
+                const SizedBox(
+                  height: 15,
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.15,
+                  width: MediaQuery.of(context).size.width * 0.95,
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(12),
+                        bottomRight: Radius.circular(12),
+                      ),
+                      boxShadow: [BoxShadows.shadow3]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              SizedBox(
-                                width: 20,
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.07,
-                                      child: const Icon(
-                                        Icons.schedule,
-                                        size: 30,
-                                        color: AppColors.mainColor,
-                                      ),
+                          SizedBox(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.only(left: 30.0, right: 30),
+                              child: Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  SizedBox(
+                                    height: MediaQuery.of(context).size.height *
+                                        0.07,
+                                    child: const Icon(
+                                      Icons.schedule,
+                                      size: 30,
+                                      color: AppColors.mainColor,
                                     ),
-                                    cameRegistered
-                                        ? SizedBox(
-                                            height: MediaQuery.of(context)
-                                                    .size
-                                                    .height *
-                                                0.07,
-                                            child: const Icon(
-                                              Icons.schedule,
-                                              size: 30,
-                                              color: AppColors.mainColor,
-                                            ),
-                                          )
-                                        : const SizedBox(),
-                                  ],
-                                ),
+                                  ),
+                                  cameRegistered
+                                      ? SizedBox(
+                                          height: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.07,
+                                          child: const Icon(
+                                            Icons.schedule,
+                                            size: 30,
+                                            color: AppColors.mainColor,
+                                          ),
+                                        )
+                                      : const SizedBox(),
+                                ],
                               ),
-                              _buildTodayWorkedHours(),
-                            ],
+                            ),
                           ),
+                          _buildTodayWorkedHours(),
                         ],
                       ),
-                    ),
+                    ],
                   ),
-
-                  const SizedBox(height: 30),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                    child: Row(
+                ),
+                const SizedBox(height: 25),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                  child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        _buildSmallButton(
-                            0.075, 0.45, onCame, AppColors.mainColor, 'Ирсэн'),
+                        _buildSmallButton(0.075, 0.45, registerCame,
+                            AppColors.mainColor, 'Ирсэн'),
                         _buildSmallButton(
                             0.075, 0.45, onLeft, AppColors.mainColor, 'Явсан'),
-                      ],
-                    ),
+                      ]),
+                ),
+                if (capturedImageBase64.isNotEmpty)
+                  Row(
+                    children: [
+                      Stack(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.5,
+                            height: MediaQuery.of(context).size.height * 0.23,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.blue, width: 3),
+                              borderRadius: BorderRadius.circular(
+                                  20), // Adjust the radius as needed
+                              image: DecorationImage(
+                                image: MemoryImage(
+                                    base64Decode(capturedImageBase64)),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: MediaQuery.of(context).size.width * 0.38,
+                            child: InkWell(
+                              onTap: () {
+                                capturedImageBase64 = '';
+                                setState(() {});
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.all(5.0),
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(60),
+                                      color: Colors.red),
+                                  child: const Icon(
+                                    Icons.delete_forever,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
                   ),
-                  const Spacer(),
-                ],
-              ),
+              ],
             ),
           ),
         ),
       ),
     );
+  }
+
+  Future<void> _onRefresh() async {
+    setState(() {
+      _refreshData = true;
+    });
+    await Future.delayed(const Duration(seconds: 1));
+    setState(() {
+      _refreshData = false;
+    });
   }
 
   PreferredSize _appbar() {
@@ -440,8 +431,8 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 0.0, top: 0),
                   child: Container(
-                    height: 80,
-                    width: 300,
+                    height: MediaQuery.of(context).size.height * 0.09,
+                    width: MediaQuery.of(context).size.width * 0.7,
                     decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -465,6 +456,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                                   child: Icon(
                                     Icons.person,
                                     size: 30,
+                                    color: Colors.white,
                                   ),
                                 ),
                               ],
@@ -485,8 +477,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                                 ),
                                 Text(
                                   Globals.getUserName(),
-                                  style: const TextStyle(
-                                      color: AppColors.mainColor, fontSize: 25),
+                                  style: TextStyles.main16semibold,
                                 ),
                               ],
                             ),
@@ -499,7 +490,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                 InkWell(
                   onTap: () => _key.currentState!.openEndDrawer(),
                   child: Container(
-                    height: 80,
+                    height: MediaQuery.of(context).size.height * 0.09,
                     width: 100,
                     decoration: const BoxDecoration(
                         color: AppColors.mainColor,
@@ -523,41 +514,23 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
 
   Padding _title() {
     return const Padding(
-      padding: EdgeInsets.only(left: 10.0, bottom: 0, top: 15),
+      padding: EdgeInsets.only(left: 10.0, bottom: 0, top: 30),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
             'ӨНӨӨДРИЙН ИРЦ',
-            style: TextStyles.black17semibold,
+            style: TextStyles.black16semibold,
           ),
         ],
       ),
     );
   }
 
-  Future<void> _onRefresh() async {
-    setState(() {
-      _refreshData = true;
-    });
-    await Future.delayed(const Duration(seconds: 1));
-    setState(() {
-      _refreshData = false;
-    });
-  }
-
-  bool dataRefresh = true;
   FutureBuilder<void> _buildTodayWorkedHours() {
     return FutureBuilder<Map<String, dynamic>>(
       future: todayWorkedHourApiClient.fetchAttendanceData(),
       builder: (context, snapshot) {
-        dataRefresh
-            ? Future.delayed(const Duration(seconds: 2), () {
-                setState(() {
-                  dataRefresh = false;
-                });
-              })
-            : null;
         if (snapshot.connectionState == ConnectionState.waiting) {
           return _buildLoadingIndicator(context);
         } else if (snapshot.hasError) {
@@ -600,14 +573,10 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                         child: SizedBox(
                           height: MediaQuery.of(context).size.height * 0.065,
                           child: Center(
-                              child: _refreshData
-                                  ? const CircularProgressIndicator(
-                                      color: AppColors.secondBlack,
-                                    )
-                                  : Text(
-                                      'Ирсэн цаг:   $formattedCheckIn',
-                                      style: TextStyles.black20,
-                                    )),
+                              child: Text(
+                            'Ирсэн цаг:   $formattedCheckIn',
+                            style: TextStyles.black16,
+                          )),
                         ),
                       ),
                       Padding(
@@ -615,14 +584,10 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                         child: SizedBox(
                           height: MediaQuery.of(context).size.height * 0.065,
                           child: Center(
-                            child: _refreshData
-                                ? const CircularProgressIndicator(
-                                    color: AppColors.secondBlack,
-                                  )
-                                : Text(
-                                    'Явсан цаг:   ${formattedCheckOut == '08:00' ? "бүртгээгүй" : formattedCheckOut}',
-                                    style: TextStyles.black20,
-                                  ),
+                            child: Text(
+                              'Явсан цаг:   ${formattedCheckOut == '08:00' ? "бүртгээгүй" : formattedCheckOut}',
+                              style: TextStyles.black16,
+                            ),
                           ),
                         ),
                       ),
@@ -640,7 +605,7 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
                             )
                           : const Text(
                               'бүртгэл хийгдээгүй',
-                              style: TextStyles.black20,
+                              style: TextStyles.black16,
                             ),
                     ),
                   ),
@@ -672,13 +637,13 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
           double totalWorkedHours = snapshot.data!;
           return _refreshData
               ? const CircularProgressIndicator(
-                  color: AppColors.mainColor,
+                  color: AppColors.secondBlack,
                 )
               : Padding(
                   padding: const EdgeInsets.symmetric(horizontal: .0),
                   child: Text(
                     '30 Хоногийн ирц: ${totalWorkedHours.toStringAsFixed(2)} цаг',
-                    style: TextStyles.black20,
+                    style: TextStyles.black16,
                   ),
                 );
         }
@@ -696,13 +661,13 @@ class _AttendanceRegisterScreenState extends State<AttendanceRegisterScreen> {
           height: MediaQuery.of(context).size.height * height,
           width: MediaQuery.of(context).size.width * width * 0.95,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(15),
               color: color,
               boxShadow: const [BoxShadows.shadow3]),
           child: Center(
             child: Text(
               text,
-              style: TextStyles.white22semibold,
+              style: TextStyles.white16semibold,
             ),
           ),
         ),

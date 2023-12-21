@@ -50,7 +50,7 @@ class Utils {
           padding: const EdgeInsets.all(10.0),
           child: Text(
             message,
-            style: TextStyles.white17semibold,
+            style: TextStyles.white16semibold,
           ),
         ),
         icon: const Padding(
@@ -90,7 +90,7 @@ class Utils {
             padding: const EdgeInsets.all(10.0),
             child: Text(
               message,
-              style: TextStyles.white17semibold,
+              style: TextStyles.white16semibold,
             ),
           ),
           icon: const Padding(

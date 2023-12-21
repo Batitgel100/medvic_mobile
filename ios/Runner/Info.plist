@@ -27,11 +27,17 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>App needs your location for registering attendance to work.</string>
+	<string>The app need to register attendance to work according to location.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>App needs your location for registering attendance to work.</string>
+	<string>The app need to register attendance to work according to location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>App needs your location for registering attendance to work.</string>
+	<string>The app need to register attendance to work according to location.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera permission is required for barcode scanning, and register attendance.</string>
+	<key>NSCameraUsageDescription</key>
+    <string>Camera permission is required for barcode scanning, and register attendance.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Microphone permission is required for register attendance.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

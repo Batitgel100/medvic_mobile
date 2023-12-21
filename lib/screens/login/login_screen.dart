@@ -154,7 +154,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: const Center(
                         child: Text(
                           'Нэвтрэх',
-                          style: TextStyles.white14semibold,
+                          style: TextStyles.white16semibold,
                         ),
                       ),
                     ),

@@ -3,35 +3,32 @@ class Globals {
 
   static late int id;
   static bool isLogin = false;
+  static bool isStockUser = false;
+  static bool isStockAdmin = false;
   static int employeeId = 0;
+  static int departmentId = 0;
   static late String phone;
   static int regid = 0;
   static late String baseUrl;
   static late String register;
+  static String binary = '';
   static late String refreshToken;
   static late String address;
   static late String password;
   static String company = '';
   static int companyId = 0;
   static late int userId;
-  static late int timer;
+  static int timer = 0;
   static double lat = 0.0;
   static double long = 0.0;
   static String userName = '';
+
   static void changeGmail(String a) {
     gmail = a;
   }
 
   static String getGmail() {
     return gmail;
-  }
-
-  static void changeCompany(String a) {
-    company = a;
-  }
-
-  static String getCompany() {
-    return company;
   }
 
   static void changeUserName(String a) {
@@ -42,11 +39,43 @@ class Globals {
     return userName;
   }
 
+  static void changeBinary(String a) {
+    binary = a;
+  }
+
+  static String getBinary() {
+    return binary;
+  }
+
+  static void changeCompany(String a) {
+    company = a;
+  }
+
+  static String getCompany() {
+    return company;
+  }
+
   static void changeUserId(int a) {
     userId = a;
   }
 
   static int getUserId() {
+    return userId;
+  }
+
+  static void changeDepartmentId(int a) {
+    departmentId = a;
+  }
+
+  static int getDepartmentId() {
+    return departmentId;
+  }
+
+  static void changeStockId(int a) {
+    userId = a;
+  }
+
+  static int getStockId() {
     return userId;
   }
 
@@ -152,5 +181,21 @@ class Globals {
 
   static bool getIsLogin() {
     return isLogin;
+  }
+
+  static void changeIsStockUser(bool a) {
+    isStockUser = a;
+  }
+
+  static bool getIsStockUser() {
+    return isStockUser;
+  }
+
+  static void changeIsStockAdmin(bool a) {
+    isStockAdmin = a;
+  }
+
+  static bool getIsStockAdmin() {
+    return isStockAdmin;
   }
 }
