@@ -4,6 +4,7 @@ import 'package:erp_medvic_mobile/screens/count/count_item_screen.dart';
 import 'package:erp_medvic_mobile/screens/count/count_screen.dart';
 import 'package:erp_medvic_mobile/screens/login/login_screen.dart';
 import 'package:erp_medvic_mobile/screens/main/main_screen.dart';
+import 'package:erp_medvic_mobile/screens/product/product_screen.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
@@ -28,10 +29,9 @@ class Routes {
       case RoutesName.main:
         return MaterialPageRoute(
             builder: (BuildContext context) => const MainScreen());
-
-      case RoutesName.item:
+      case RoutesName.product:
         return MaterialPageRoute(
-            builder: (BuildContext context) => const CountItemScreen());
+            builder: (BuildContext context) => const ProductScreen());
 
       default:
         return MaterialPageRoute(builder: (_) {
@@ -51,6 +51,7 @@ class RoutesName {
   static const String countScreen = 'countScreen';
   static const String login = 'login';
   static const String item = 'item';
+  static const String product = 'product';
 
   //home screen routes name
   static const String main = 'main_screen';

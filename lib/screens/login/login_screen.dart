@@ -40,8 +40,8 @@ class _LoginScreenState extends State<LoginScreen> {
 // нэвтрэх үйлдэл
 
   void main() async {
-    final loggedIn = await auth.login(
-        emailController.text, passwordController.text, context);
+    final loggedIn =
+        await auth.login(emailController.text, passwordController.text);
     if (loggedIn) {
       Utils.flushBarSuccessMessage('Амжилттай нэвтэрлээ', context);
       print('logged in successfully');

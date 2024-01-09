@@ -37,19 +37,32 @@ class CustomDrawer extends StatelessWidget {
               Navigator.pushNamed(context, RoutesName.attendanceScreen);
             },
           ),
-          // ListTile(
-          //   leading: const Icon(
-          //     Icons.train,
-          // color: Colors.white,
-          //   ),
-          //   title: const Text(
-          //     'Тооллого',
-          //     style: TextStyles.black19,
-          //   ),
-          //   onTap: () {
-          //     Navigator.pushNamed(context, RoutesName.countScreen);
-          //   },
-          // ),
+          ListTile(
+            leading: const Icon(
+              Icons.train,
+              color: Colors.white,
+            ),
+            title: const Text(
+              'Тооллого',
+              style: TextStyles.white16,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, RoutesName.countScreen);
+            },
+          ),
+          ListTile(
+            leading: const Icon(
+              Icons.shop,
+              color: Colors.white,
+            ),
+            title: const Text(
+              'Бараа',
+              style: TextStyles.white16,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, RoutesName.product);
+            },
+          ),
         ],
       ),
     );
