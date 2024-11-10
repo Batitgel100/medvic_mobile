@@ -52,6 +52,19 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(
+              Icons.train,
+              color: Colors.white,
+            ),
+            title: const Text(
+              'Эмчилгээ',
+              style: TextStyles.white16,
+            ),
+            onTap: () {
+              Navigator.pushNamed(context, RoutesName.appointmentListScreen);
+            },
+          ),
+          ListTile(
+            leading: const Icon(
               Icons.shop,
               color: Colors.white,
             ),

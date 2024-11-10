@@ -1,6 +1,6 @@
+import 'package:erp_medvic_mobile/screens/appointment/appointment_list_screen.dart';
 import 'package:erp_medvic_mobile/screens/attendance%20register/attendance_list_screen.dart';
 import 'package:erp_medvic_mobile/screens/attendance%20register/attendance_register_screen.dart';
-import 'package:erp_medvic_mobile/screens/count/count_item_screen.dart';
 import 'package:erp_medvic_mobile/screens/count/count_screen.dart';
 import 'package:erp_medvic_mobile/screens/login/login_screen.dart';
 import 'package:erp_medvic_mobile/screens/main/main_screen.dart';
@@ -33,6 +33,10 @@ class Routes {
         return MaterialPageRoute(
             builder: (BuildContext context) => const ProductScreen());
 
+      case RoutesName.appointmentListScreen:
+        return MaterialPageRoute(
+            builder: (BuildContext context) => const AppointmentListScreen());
+
       default:
         return MaterialPageRoute(builder: (_) {
           return const Scaffold(
@@ -49,6 +53,7 @@ class RoutesName {
   static const String attendanceRegister = 'attendanceRegister';
   static const String attendanceScreen = 'attendanceScreen';
   static const String countScreen = 'countScreen';
+  static const String appointmentListScreen = 'appointmentListScreen';
   static const String login = 'login';
   static const String item = 'item';
   static const String product = 'product';
